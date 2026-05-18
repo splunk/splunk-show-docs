@@ -1,0 +1,76 @@
+baseURL: ''
+languageCode: 'en-us'
+title: 'Splunk Show Documentation'
+theme: 'relearn'
+
+# URL settings
+uglyURLs: false
+relativeURLs: false
+
+# Relearn theme parameters
+params:
+  # Edit page settings
+  editPage: true
+
+  # Updated author format (fix for deprecation warning)
+  author:
+    name: "Splunk"
+
+  # Cache busting - adds hash to asset URLs
+  disableAssetsBusting: false
+
+  # Custom asset version (set via HUGO_PARAMS_assetVersion in CI)
+  assetVersion: ""
+
+  # URL settings - disable explicit index.html in URLs
+  disableExplicitIndexURLs: true
+
+  # Theme settings
+  #themeVariant: "auto" # auto, light, dark, blue, green, red
+  themeVariant:
+    - identifier: "auto"
+      name: "Auto"
+    - identifier: "splunk-light"
+      name: "Light"
+    - identifier: "splunk-dark"
+      name: "Dark"
+  disableBreadcrumb: false
+  disableNextPrev: false
+  disableLandingPageButton: false
+  titleSeparator: "::"
+
+  # Custom links in menu
+  additionalContentLanguage: ['en']
+
+# Menu configuration
+menu:
+  shortcuts:
+    - name: "Splunk Show Platform"
+      url: "https://show.splunk.com"
+      weight: 10
+    - name: "Support Slack"
+      url: "https://splunk.enterprise.slack.com/archives/C02EQU3B9HR"
+      weight: 20
+
+# Markup settings
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    lineNos: true
+    style: "github"
+
+# Updated output formats (removed unsupported SEARCH and JSON)
+outputs:
+  home: ["HTML", "RSS"]
+  section: ["HTML", "RSS", "PRINT"]
+  page: ["HTML", "RSS", "PRINT"]
+
+outputFormats:
+  PRINT:
+    baseName: "index"
+    isHTML: true
+    mediaType: "text/html"
+    path: "_print"
+    permalinkable: false

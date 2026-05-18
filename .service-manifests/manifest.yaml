@@ -1,0 +1,25 @@
+---
+apiVersion: 'backstage.io/v1alpha1'
+kind: 'Component'
+metadata:
+  name: 'splunk-show-docs'
+  title: 'Splunk Show Documentation'
+  functionalDomain: []
+  description: 'User documentation for the Splunk Show platform'
+  annotations:
+    backstage.io/source-location: 'url:https://github.com/splunk/splunk-show-docs'
+    backstage.io/view-url: 'https://github.com/splunk/splunk-show-docs/blob/main/.service-manifests/manifest.yaml'
+    backstage.io/edit-url: 'https://github.com/splunk/splunk-show-docs/edit/main/.service-manifests/manifest.yaml'
+    splunk.com/slack-url: 'https://splunk.enterprise.slack.com/archives/C02EQU3B9HR'
+    splunk.com/issue-tracker-url: 'https://splunk.atlassian.net/projects/DEMO/issues'
+  links:
+    - title: 'Overview'
+      url: 'http://go/replace/me'
+    - title: 'ERD/RFC'
+      url: 'http://go/replace/me'
+    - title: 'Ops Runbook'
+      url: 'http://go/replace/me'
+spec:
+  lifecycle: 'production'
+  type: 'product'
+  owner: 'group:sg-cloud-tmm'

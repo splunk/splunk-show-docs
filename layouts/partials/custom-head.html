@@ -1,0 +1,14 @@
+<!-- Load custom Splunk theme CSS files -->
+{{- $cssLight := resources.Get "css/theme-splunk-light.css" }}
+{{- $cssDark := resources.Get "css/theme-splunk-dark.css" }}
+
+{{- if $cssLight }}
+<link href="{{ $cssLight.RelPermalink }}" rel="stylesheet" data-theme-variant="splunk-light">
+{{- end }}
+
+{{- if $cssDark }}
+<link href="{{ $cssDark.RelPermalink }}" rel="stylesheet" data-theme-variant="splunk-dark">
+{{- end }}
+
+<!-- Load custom styles for labels and text formatting -->
+<link href="/splunk-show-docs/css/custom.css" rel="stylesheet">
