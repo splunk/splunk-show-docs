@@ -5,7 +5,8 @@ theme: 'relearn'
 
 # URL settings
 uglyURLs: false
-relativeURLs: true
+relativeURLs: false
+canonifyURLs: true
 
 # Relearn theme parameters
 params:
