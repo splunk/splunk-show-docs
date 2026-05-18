@@ -5,7 +5,7 @@ theme: 'relearn'
 
 # URL settings
 uglyURLs: false
-relativeURLs: false
+relativeURLs: true
 
 # Relearn theme parameters
 params:
