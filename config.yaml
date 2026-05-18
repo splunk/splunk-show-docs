@@ -1,4 +1,4 @@
-baseURL: ''
+baseURL: 'https://splunk.github.io/splunk-show-docs/'
 languageCode: 'en-us'
 title: 'Splunk Show Documentation'
 theme: 'relearn'
