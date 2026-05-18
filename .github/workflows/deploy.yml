@@ -19,6 +19,7 @@ concurrency:
 env:
   HUGO_VERSION: "0.141.0"
   NODE_VERSION: "22"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   fetch-release-notes:
