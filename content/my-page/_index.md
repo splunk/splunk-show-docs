@@ -13,7 +13,7 @@ By default, you will land on your personal home page. This page presents an over
 {{% notice info %}}
 **Not seeing any of these tabs?**  
 If you don't see any of these tabs this means you haven't yet been granted access to run demos or workshops. To request access:
-* **Splunkers:** Please complete [this request form](https://splunk.atlassian.net/servicedesk/customer/portal/17/group/113/create/1934)
+* **Splunkers:** Please complete [this request form](https://splunk.show/request)
 * **Partners:** Email us at [splunk-show@cisco.com](mailto:splunk-show@cisco.com)
 {{% /notice %}}
 
