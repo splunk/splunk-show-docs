@@ -22,66 +22,13 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  fetch-release-notes:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: recursive
-      - uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: Install dependencies
-        run: npm install -g axios node-html-markdown
-      - name: Fetch release notes
-        env:
-          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
-          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
-          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
-          NODE_PATH: /usr/local/lib/node_modules
-        run: node scripts/fetch-release-notes.js
-      - name: Upload release notes artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: release-notes-raw
-          path: files/release_notes.md
-
-  process-release-notes:
-    runs-on: ubuntu-latest
-    needs: fetch-release-notes
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: recursive
-      - uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: Download raw release notes
-        uses: actions/download-artifact@v4
-        with:
-          name: release-notes-raw
-          path: files/
-      - name: Process release notes
-        run: node scripts/process-release-notes.js
-      - name: Upload processed content
-        uses: actions/upload-artifact@v4
-        with:
-          name: release-notes-content
-          path: content/release-notes/
-
   build:
     runs-on: ubuntu-latest
-    needs: process-release-notes
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Download processed release notes
-        uses: actions/download-artifact@v4
-        with:
-          name: release-notes-content
-          path: content/release-notes/
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
