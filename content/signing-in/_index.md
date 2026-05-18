@@ -9,6 +9,6 @@ Navigate to [https://show.splunk.com](https://show.splunk.com) to get started. Y
 
 {{% notice important %}}
 If you receive an error message from Okta that reads **App Access Locked**, you do not have the proper access to access Show. You'll need to:
-* **Splunkers:** File a request via our [portal](https://splunk.atlassian.net/servicedesk/customer/portal/17)
+* **Splunkers:** File a request via our [portal](https://splunk.show/request)
 * **Partners:** Email [splunk-show@cisco.com](mailto:splunk-show@cisco.com)
 {{% /notice %}}
