@@ -46,12 +46,15 @@ params:
 # Menu configuration
 menu:
   shortcuts:
-    - name: "Splunk Show Platform"
-      url: "https://show.splunk.com"
+    - name: "Release Notes (Splunkers only)"
+      url: "https://splunk.show/release-notes"
       weight: 10
-    - name: "Support Slack"
-      url: "https://splunk.enterprise.slack.com/archives/C02EQU3B9HR"
+    - name: "Splunk Show Portal"
+      url: "https://show.splunk.com"
       weight: 20
+    - name: "Support Slack (Splunkers only)"
+      url: "https://splunk.enterprise.slack.com/archives/C02EQU3B9HR"
+      weight: 30
 
 # Markup settings
 markup:
