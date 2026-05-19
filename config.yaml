@@ -49,12 +49,15 @@ menu:
     - name: "Release Notes (Splunkers only)"
       url: "https://splunk.show/release-notes"
       weight: 10
+      pre: '<i class="fas fa-file-alt" style="color: white;"></i> '
     - name: "Splunk Show Portal"
       url: "https://show.splunk.com"
       weight: 20
+      pre: '<i class="fas fa-globe" style="color: white;"></i> '
     - name: "Support Slack (Splunkers only)"
       url: "https://splunk.enterprise.slack.com/archives/C02EQU3B9HR"
       weight: 30
+      pre: '<i class="fab fa-slack" style="color: white;"></i> '
 
 # Markup settings
 markup:
