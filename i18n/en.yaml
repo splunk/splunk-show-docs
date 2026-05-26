@@ -1,0 +1,8 @@
+- id: workshops
+  translation: "Contents"
+- id: searchPlaceholder
+  translation: "Search documentation…"
+- id: notFoundLead
+  translation: "The page you're looking for slipped through the index. Try the contents list."
+- id: browseWorkshops
+  translation: "Browse contents"

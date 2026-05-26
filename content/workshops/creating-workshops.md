@@ -1,7 +1,7 @@
-+++
-title = "Creating a Workshop/Event"
-weight = 10
-+++
+---
+title: "Creating a Workshop/Event"
+weight: 10
+---
 
 <!-- # Creating a Workshop/Event (Create Workshop Page) -->
 
@@ -17,7 +17,7 @@ When you click on the **New workshop** button for a workshop template you are ta
 
 ## New workshop or event
 
-<img src="/images/new_workshop.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/new_workshop.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
 
 * **Name** - the customisable name of the demo instance
 * **Custom notes** - a free text field for any notes related to this workshop (URLs will be detected and made clickable). If you're creating a workshop event then these notes will be visible to enrolled users on the events page.
@@ -27,7 +27,7 @@ When you click on the **New workshop** button for a workshop template you are ta
 {{% /notice %}}
 
 <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-  <img src="/images/event_notes.png" alt="Example of what workshop attendees will see when you add a custom note to an event" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/event_notes.png" alt="Example of what workshop attendees will see when you add a custom note to an event" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     Example of what workshop attendees will see when you add a custom note to an event
   </figcaption>
@@ -36,23 +36,23 @@ When you click on the **New workshop** button for a workshop template you are ta
 ## Use Case
 
 The reason for the workshop, which has the following options (Please expand the section relevant to your role):
-<img src="/images/use_case.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/use_case.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
 
 {{% expand title="Splunker Options" %}}
 
 * **Type** 
 
   <figure style="max-width: 40%; margin: 0 0 1rem 0;">
-    <img src="/images/use_case_dropdown.png" alt="Options available to Splunkers" style="width: 100%; height: auto; display: block; margin: 0;">
+    <img src="/splunk-show-docs/images/use_case_dropdown.png" alt="Options available to Splunkers" style="width: 100%; height: auto; display: block; margin: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Options available to Splunkers
     </figcaption>
   </figure>
 
-* **Salesforce** - the workshop is being spun up for a customer-facing activity related to one of the following Salesforce entities. Please use this option when possible as it helps the team to track the demo instance spend to a specific Salesforce record. Either paste in the SFDC ID for the Account, Opportunity, Campaign, or SESR/INH the workshop will be tied to or alternatively use the **Advanced search** option to search by name. For more detailed information, see the [Salesforce Integration](../../account-settings/salesforce/) section.
+* **Salesforce** - the workshop is being spun up for a customer-facing activity related to one of the following Salesforce entities. Please use this option when possible as it helps the team to track the demo instance spend to a specific Salesforce record. Either paste in the SFDC ID for the Account, Opportunity, Campaign, or SESR/INH the workshop will be tied to or alternatively use the **Advanced search** option to search by name. For more detailed information, see the [Salesforce Integration](/account-settings/salesforce/) section.
 
   <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-    <img src="/images/use_case_sfdc_dropdown.png" alt="Available SFDC record types when using the Advanced search" style="width: 100%; height: auto; display: block; margin: 0;">
+    <img src="/splunk-show-docs/images/use_case_sfdc_dropdown.png" alt="Available SFDC record types when using the Advanced search" style="width: 100%; height: auto; display: block; margin: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Available SFDC record types when using the Advanced search
     </figcaption>
@@ -75,7 +75,7 @@ The reason for the workshop, which has the following options (Please expand the 
 * **Type** 
 
   <figure style="max-width: 40%; margin: 0 0 1rem 0;">
-    <img src="/images/use_case_dropdown_partner.png" alt="Options available to partners" style="width: 100%; height: auto; display: block; margin: 0;">
+    <img src="/splunk-show-docs/images/use_case_dropdown_partner.png" alt="Options available to partners" style="width: 100%; height: auto; display: block; margin: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Options available to partners
     </figcaption>
@@ -83,7 +83,7 @@ The reason for the workshop, which has the following options (Please expand the 
 
 * **Salesforce** - the workshop is being spun up for a customer-facing activity related to one of the following Salesforce entities. Please use this option when possible as it helps the team to tie content usage to a specific customer.
 
-  <img src="/images/use_case_sfdc_dropdown_partner.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/use_case_sfdc_dropdown_partner.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
 
   * **ID Type**
     * Account
@@ -98,7 +98,7 @@ The reason for the workshop, which has the following options (Please expand the 
 
 ## Network
 
-<img src="/images/network_workshop.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/network_workshop.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
 
 * **DNS Prefix** - a customisable label that will be included in the DNS records and instance URLs for this workshop. This helps organize the instance URLs once provisioned. For example, entering `abc` as the prefix will result in instance URLs that looks like this:  
   `https://abc-i-08115630654cebf93.splunk.show`
@@ -106,7 +106,7 @@ The reason for the workshop, which has the following options (Please expand the 
 
 ## Runtime
 
-<img src="/images/runtime_workshop.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/runtime_workshop.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
 
 * **Lifetime** - the Time-to-Live (TTL) for your workshop instances (minimum of 2 hours, maximum of 14 days.)
 
@@ -114,7 +114,7 @@ The reason for the workshop, which has the following options (Please expand the 
 
 * **Operating hours** - (can only be changed on Splunk Enterprise based templates) this allows you to create a custom schedule for the instance, selecting the days and time window you would like to have the instance available. Once selected, Splunk Show will automatically pause/restart the instance at the scheduled time.
 
-  <img src="/images/operating_hours.png" alt="my_page" style="width: 50%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/operating_hours.png" alt="my_page" style="width: 50%; height: auto; display: block; margin: 0;">
 
   The available time window selections are:
 
@@ -131,7 +131,7 @@ Splunk Cloud instances must run 24/7 and their operating hours cannot be customi
 ## Template fields
 
 <figure style="max-width: 50%; margin: 0 0 1rem 0;">
-  <img src="/images/template_fields.png" alt="Template fields" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/template_fields.png" alt="Template fields" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     Template fields
   </figcaption>
@@ -143,13 +143,13 @@ Splunk Show Workshop monitor provides a quick view into your workshop instances 
 
 {{% notice info %}}
 **Using Workshop Monitor**  
-For more information on this feature please see [Monitoring Workshop Instances](../managing-workshops/#monitoring-workshop-instances)
+For more information on this feature please see [Monitoring Workshop Instances](/workshops/managing-workshops/#monitoring-workshop-instances)
 {{% /notice %}}
 
 ## Workshop type
 
 <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-  <img src="/images/workshop_type.png" alt="There are three workshop types available in Show" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/workshop_type.png" alt="There are three workshop types available in Show" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     There are three workshop types available in Show
   </figcaption>
@@ -159,9 +159,9 @@ This section allows you select what type of workshop you want to run. The follow
 
 * **Normal**
 
-  <img src="/images/workshop_type_normal.png" alt="my_page" style="width: 40%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/workshop_type_normal.png" alt="my_page" style="width: 40%; height: auto; display: block; margin: 0;">
   
-  A "traditional" workshop where you request a specific number of workshop instances up front. <span class="text-red">No Splunk.com account is required.</span> Once provisioned, instance details and access information must be [downloaded as a csv file](../managing-workshops/#obtain-a-list-of-instances-for-a-normal-workshop) for distribution to participants of the workshop. No record of participants is kept by Show (as there is no enrolment) - it's all down to you!
+  A "traditional" workshop where you request a specific number of workshop instances up front. <span class="text-red">No Splunk.com account is required.</span> Once provisioned, instance details and access information must be [downloaded as a csv file](/workshops/managing-workshops/#obtain-a-list-of-instances-for-a-normal-workshop) for distribution to participants of the workshop. No record of participants is kept by Show (as there is no enrolment) - it's all down to you!
 
   {{% notice tip %}}
   **Ideal for:** "Old school" workshops where you're happy to manually manage instances and hand out credentials to participants.
@@ -169,7 +169,7 @@ This section allows you select what type of workshop you want to run. The follow
 
 * **Private Event**
 
-  <img src="/images/workshop_type_private_event.png" alt="my_page" style="width: 40%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/workshop_type_private_event.png" alt="my_page" style="width: 40%; height: auto; display: block; margin: 0;">
 
   A workshop that allows you to invite participants to an 'event' within Splunk Show. <span class="text-red">A Splunk.com account is required. Enable 'Allow anonymous Enrolment via Passcode' at the bottom of the *Create workshop* if you need to allow users to enrol without a Splunk.com account.</span> Invited participants can either use a direct link to access and enrol in the workshop event or you can invite them individually via their email address. When you use the email invite method invitees will receive an email to enrol in the event. You will also get a CSV list of enrolled users at the end of the workshop.
 
@@ -181,7 +181,7 @@ This section allows you select what type of workshop you want to run. The follow
 
 * **Public Event**
 
-  <img src="/images/workshop_type_public_event.png" alt="my_page" style="width: 40%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/workshop_type_public_event.png" alt="my_page" style="width: 40%; height: auto; display: block; margin: 0;">
 
   Similar to private events but requires no invitation as anyone who logs in to Splunk Show (using a Splunk.com account) can see and enrol in the workshop event. <span class="text-red">A Splunk.com account is required. Enable 'Allow anonymous Enrolment via Passcode' at the bottom of the *Create workshop* page if you need to allow users to enrol without a Splunk.com account.</span> You will also get a CSV list of enrolled users at the end of the workshop (passcode authenticated users will appear as anonymous users.
 
@@ -196,7 +196,7 @@ This section allows you select what type of workshop you want to run. The follow
   **Splunkers:** If customers have followed the registration best practices above and still experience registration messages such as the one in the screenshot below please reach out to #dpl-screening-issues in Slack for support.
 
   <figure style="max-width: 100%; margin: 0 0 1rem 0;">
-    <img src="/images/sign_up_message.png" alt="Example screening message during a splunk.com account registration" style="width: 100%; height: auto; display: block; margin: 0;">
+    <img src="/splunk-show-docs/images/sign_up_message.png" alt="Example screening message during a splunk.com account registration" style="width: 100%; height: auto; display: block; margin: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Example screening message during a splunk.com account registration
     </figcaption>
@@ -207,11 +207,11 @@ This section allows you select what type of workshop you want to run. The follow
   {{% expand title="Choosing a Workshop Type" %}}
   Follow this flow to decide which workshop format is best for your activity:
 
-  ![decision flow](/images/show_workshop_decision_flow.png)
+  ![decision flow](/splunk-show-docs/images/show_workshop_decision_flow.png)
   {{% /expand %}}
 
 ### Provisioning time
-<img src="/images/provisioning_time.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/provisioning_time.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
 
 * **Provisioning Start** - the date/time when the instances should be provisioned by the system. Consider the number of instances and average provisioning time for the given template when selecting how far in advance you want the provisioning to start.
   * **Now** - your instance(s) will be provisioned immediately
@@ -242,7 +242,7 @@ This section allows you select what type of workshop you want to run. The follow
   When attendees enrol in a Splunk Show event they are allocated a workshop instance. The Termination Time setting will only impact users who **don't** enrol.
   {{% /notice %}}
   <figure style="max-width: 50%; margin: 0 0 1rem 0;">
-    <img src="/images/termination_time.png" alt="Set how long you want unallocated instances to run for before Show terminates them" style="width: 100%; height: auto; display: block; margin: 0;">
+    <img src="/splunk-show-docs/images/termination_time.png" alt="Set how long you want unallocated instances to run for before Show terminates them" style="width: 100%; height: auto; display: block; margin: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Set how long you want unallocated instances to run for before Show terminates them
     </figcaption>
@@ -252,13 +252,13 @@ This section allows you select what type of workshop you want to run. The follow
   
   <div style="display: flex; gap: 1rem; align-items: stretch; margin-bottom: 1rem;">
     <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
-    <img src="/images/participant_list_email.png" alt="Example of a participants list email" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
+    <img src="/splunk-show-docs/images/participant_list_email.png" alt="Example of a participants list email" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
       <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
         Example of a participants list email
       </figcaption>
     </figure>
     <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
-    <img src="/images/participant_csv.png" alt="Example of a participants list in CSV format" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
+    <img src="/splunk-show-docs/images/participant_csv.png" alt="Example of a participants list in CSV format" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
       <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
         Example of a participants list in CSV format
       </figcaption>
@@ -269,7 +269,7 @@ This section allows you select what type of workshop you want to run. The follow
 
 ## Review
 <figure style="max-width: 100%; margin: 0 0 1rem 0;">
-  <img src="/images/review.png" alt="Carefully review the summary of the workshop before creating it!" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/review.png" alt="Carefully review the summary of the workshop before creating it!" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     Carefully review the summary of the workshop before creating it!
   </figcaption>
@@ -279,7 +279,7 @@ Provides a summary of the workshop you are about to create including workshop ty
 
 ## Total Cost to Splunk
 <figure style="max-width: 50%; margin: 0 0 1rem 0;">
-  <img src="/images/total_cost_event.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/total_cost_event.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     Total cost estimate
   </figcaption>

@@ -1,14 +1,14 @@
-+++
-title = "View Template Information"
-weight = 10
-+++
+---
+title: "View Template Information"
+weight: 10
+---
 
 <!-- # View Template Information -->
 
 Click on a template tile (not the 'New…' button but the tile itself) to view information about that template.
 
 <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-  <img src="/images/template_info.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/template_info.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     Example of information presented when viewing a template. Note: Not all possible template metadata is shown in this screenshot
   </figcaption>
@@ -21,7 +21,7 @@ Click on a template tile (not the 'New…' button but the tile itself) to view i
 **Instructions** - <span class="conditional-note">(only displayed in some templates)</span> outlines any additional instructions that you should know about this template, such as how long data backfill takes to complete before your demo is fully ready to use.
 
 <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-  <img src="/images/instructions.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/instructions.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     Example of additional instructions included in a demo template. Note: Not all templates include this section
   </figcaption>
@@ -34,13 +34,13 @@ Click on a template tile (not the 'New…' button but the tile itself) to view i
 
 <div style="display: flex; gap: 1rem; align-items: stretch; margin-bottom: 1rem;">
   <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
-    <img src="/images/grouped_resources_01.png" alt="Grouped Resources 1" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
+    <img src="/splunk-show-docs/images/grouped_resources_01.png" alt="Grouped Resources 1" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Grouped resources example 1
     </figcaption>
   </figure>
   <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
-    <img src="/images/grouped_resources_02.png" alt="Grouped Resources 2" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
+    <img src="/splunk-show-docs/images/grouped_resources_02.png" alt="Grouped Resources 2" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Grouped resources example 2
     </figcaption>
@@ -64,5 +64,5 @@ If this button is linked to a Google Drive folder you will see a popup with a li
 {{% notice warning %}}
 **Experiencing Technical Issues with a Show Instance?**  
 The Submit Content Feedback button should only be used for content improvement feedback.  
-If you are experiencing technical issues related to the running of a Splunk Show demo/workshop - such as instances not spinning up or data not appearing in a specific instance - please raise a support request (see [Support](../../support/).)
+If you are experiencing technical issues related to the running of a Splunk Show demo/workshop - such as instances not spinning up or data not appearing in a specific instance - please raise a support request (see [Support](/support/).)
 {{% /notice %}}

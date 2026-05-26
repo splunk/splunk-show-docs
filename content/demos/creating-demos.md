@@ -1,7 +1,7 @@
-+++
-title = "Creating a Demo"
-weight = 10
-+++
+---
+title: "Creating a Demo"
+weight: 10
+---
 
 <!-- # Create a Demo (New Demo Page) -->
 
@@ -12,13 +12,13 @@ When you click on the **New demo** button for a demo template you are taken to t
 {{% /notice %}}
 
 ## New demo
-<img src="/images/new_demo.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/new_demo.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
 
 * **Name** - the customizable name of the demo instance
 * **Custom notes** - a free text field for any internal notes related to this demo
 
 ## Use Case
-<img src="/images/use_case.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/use_case.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
 
 The reason for the demo instance, which has several options (Please expand the section relevant to your role)::
 
@@ -26,15 +26,15 @@ The reason for the demo instance, which has several options (Please expand the s
 
 * **Type** 
   <figure style="max-width: 40%; margin: 0 0 1rem 0;">
-    <img src="/images/use_case_dropdown.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+    <img src="/splunk-show-docs/images/use_case_dropdown.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Options available to Splunkers
     </figcaption>
     </figure>
 
-  * **Salesforce** - the instance is being spun up for a customer-facing activity related to one of the following Salesforce entities. Please use this option when possible as it helps the team to track the demo instance spend to a specific Salesforce record. Either paste in the SFDC ID for the Account, Opportunity, Campaign, or SESR/INH the workshop will be tied to, or alternatively use the **Advanced search** option to search by name. For more detailed information, see the [Salesforce Integration](../../account-settings/salesforce/) section.
+  * **Salesforce** - the instance is being spun up for a customer-facing activity related to one of the following Salesforce entities. Please use this option when possible as it helps the team to track the demo instance spend to a specific Salesforce record. Either paste in the SFDC ID for the Account, Opportunity, Campaign, or SESR/INH the workshop will be tied to, or alternatively use the **Advanced search** option to search by name. For more detailed information, see the [Salesforce Integration](/account-settings/salesforce/) section.
     <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-    <img src="/images/use_case_sfdc_dropdown.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+    <img src="/splunk-show-docs/images/use_case_sfdc_dropdown.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Available SFDC record types when using the Advanced search
     </figcaption>
@@ -58,14 +58,14 @@ The reason for the demo instance, which has several options (Please expand the s
 
 * **Type** 
   <figure style="max-width: 40%; margin: 0 0 1rem 0;">
-    <img src="/images/use_case_dropdown_partner.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+    <img src="/splunk-show-docs/images/use_case_dropdown_partner.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Options available to partners
     </figcaption>
   </figure>
 
 * **Salesforce** - the demo is being spun up for a customer-facing activity related to one of the following Salesforce entities. Please use this option when possible as it helps the team to tie content usage to a specific customer.
-  <img src="/images/use_case_sfdc_dropdown_partner.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/use_case_sfdc_dropdown_partner.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
 
   * **ID Type**
     * Account
@@ -79,7 +79,7 @@ The reason for the demo instance, which has several options (Please expand the s
   {{% /expand %}}
 
 ## Network
-  <img src="/images/network_demo.png" alt="my_page" style="width: 60%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/network_demo.png" alt="my_page" style="width: 60%; height: auto; display: block; margin: 0;">
 
 * **SSH access** -<span class="label">Splunkers Only</span><span class="restriction-note"> (only available on some Some Enterprise based templates)</span> this option allows you to enable SSH access to the instance. Once enabled, the SSH access information will be available under the instance details alongside your Splunk login credentials.
 
@@ -94,13 +94,13 @@ The reason for the demo instance, which has several options (Please expand the s
 {{% /notice %}}
 
 ## Runtime
-  <img src="/images/runtime_demo.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/runtime_demo.png" alt="my_page" style="width: 80%; height: auto; display: block; margin: 0;">
 
 Provides options to customise the running schedule for your instance(s). Options include:
 
 * **Schedule** - select whether you want your demo to be spun up
   <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-    <img src="/images/schedule_demo.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+    <img src="/splunk-show-docs/images/schedule_demo.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Options available when scheduling an instance
     </figcaption>
@@ -119,7 +119,7 @@ Provides options to customise the running schedule for your instance(s). Options
   {{% /notice %}}
 
 * **Operating hours** - <span class="restriction-note">(can only be changed on Splunk Enterprise based templates)</span> this allows you to create a custom schedule for the instance, selecting the days and time window you would like to have the instance available. Once selected, Splunk Show will automatically pause/restart the instance at the scheduled time.
-  <img src="/images/operating_hours.png" alt="my_page" style="width: 50%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/operating_hours.png" alt="my_page" style="width: 50%; height: auto; display: block; margin: 0;">
 
   {{% notice info %}}
   **Splunk Cloud based templates**  
@@ -131,7 +131,7 @@ Provides options to customise the running schedule for your instance(s). Options
   * **User default operating hours** - Within Account Settings > Preferences > Scheduled Instances, there is a place to set a user-defined schedule if you operate outside of typical business hours, or have use cases that require different time windows.
   * **Custom operating hours** - this option is to set a schedule for that specific instance in cases where a one-off schedule is required.
     <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-      <img src="/images/custom_operating_hours.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+      <img src="/splunk-show-docs/images/custom_operating_hours.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
       <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
         Example of using ‘Custom operating hours’
       </figcaption>
@@ -146,9 +146,9 @@ Provides options to customise the running schedule for your instance(s). Options
 Splunk Show displays time in either 12 or 24 hour format, according to your OS and browser settings. If you wish to change from one format to another please adjust these settings in your OS/browser.
 
 ## Demo Details
-<img src="/images/demo_details.png" alt="my_page" style="width: 50%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/demo_details.png" alt="my_page" style="width: 50%; height: auto; display: block; margin: 0;">
 
-* **Shared demo** - select whether this demo will be shared with other Splunk Show users. Enabling this will make this demo visible to all Splunk Show users under the **Shared** demos section. (see [Shared Demos](../shared-demos/)). If your demo has been linked to a Salesforce record and you toggle this Shared demo switch on, an advisory message will appear warning you that this is not recommended due to potential impact to customer activities. You can continue with sharing but at your own risk.
+* **Shared demo** - select whether this demo will be shared with other Splunk Show users. Enabling this will make this demo visible to all Splunk Show users under the **Shared** demos section. (see [Shared Demos](/demos/shared-demos/)). If your demo has been linked to a Salesforce record and you toggle this Shared demo switch on, an advisory message will appear warning you that this is not recommended due to potential impact to customer activities. You can continue with sharing but at your own risk.
 
 {{% notice info %}}
 **Shared Demos**  

@@ -1,14 +1,14 @@
-+++
-title = "Public Page"
-weight = 50
-+++
+---
+title: "Public Page"
+weight: 50
+---
 
 <!-- # Public Page -->
-<img src="/images/public_page_banner.png" alt="my_page" style="max-width: 80%; height: auto; display: block; margin: 0 0 1rem 0; clear: both;">
+<img src="/splunk-show-docs/images/public_page_banner.png" alt="my_page" style="max-width: 80%; height: auto; display: block; margin: 0 0 1rem 0; clear: both;">
 
 This page provides the default public view for all customers who log in to Splunk Show.
 
-<img src="/images/public_page.png" alt="my_page" style="max-width: 100%; height: auto; display: block; margin: 0 0 1rem 0; clear: both;">
+<img src="/splunk-show-docs/images/public_page.png" alt="my_page" style="max-width: 100%; height: auto; display: block; margin: 0 0 1rem 0; clear: both;">
 
 The Public page contains the following:
 

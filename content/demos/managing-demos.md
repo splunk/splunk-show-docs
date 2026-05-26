@@ -1,14 +1,14 @@
-+++
-title = "Managing a Demo"
-weight = 20
-+++
+---
+title: "Managing a Demo"
+weight: 20
+---
 
 <!-- # Managing a Demo -->
 
 To manage a demo, locate the requested demo on the home page under **My instances** and click on the requested demo.
 
 <figure style="max-width: 60%; margin: 0 0 1rem 0;">
-  <img src="/images/my_instances_demo.png" alt="Click on a demo to access the management view" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/my_instances_demo.png" alt="Click on a demo to access the management view" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     Click on a demo to access the management view
   </figcaption>
@@ -17,7 +17,7 @@ To manage a demo, locate the requested demo on the home page under **My instance
 You will be presented with the management page for your demo.
 
 <figure style="max-width: 100%; margin: 0 0 1rem 0;">
-  <img src="/images/manage_demo.png" alt="Example of a management page for a running demo" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/manage_demo.png" alt="Example of a management page for a running demo" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     Example of a management page for a running demo
   </figcaption>
@@ -36,12 +36,12 @@ Much of this page is self explanatory but please note the following options:
 - [Access Connection Info](#accessing-demo-connection-information)
 
 ## Extend Instances (Change lifetime)
-<img src="/images/change_lifetime.png" alt="my_page" style="width: 20%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/change_lifetime.png" alt="my_page" style="width: 20%; height: auto; display: block; margin: 0;">
 
 Extend an instance by using the **Change lifetime** option. When extending instances, the status of the demo/workshop will briefly change to PENDING while the lifetime value is updated, and will return to the RUNNING state when the extension is complete.
 
 <figure style="max-width: 50%; margin: 0 0 1rem 0;">
-  <img src="/images/change_lifetime_window.png" alt="Select a new termination date for your instances using the Change lifetime option" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/change_lifetime_window.png" alt="Select a new termination date for your instances using the Change lifetime option" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     Select a new termination date for your instances using the Change lifetime option
   </figcaption>
@@ -57,14 +57,14 @@ Cloud-based demos - such as those which leverage Splunk Cloud Platform, SOAR or 
 {{% /notice %}}
 
 ## Pause Instances
-<img src="/images/pause.png" alt="my_page" style="width: 12%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/pause.png" alt="my_page" style="width: 12%; height: auto; display: block; margin: 0;">
 
 <span class="conditional-note">(Only available for Splunk Enterprise instances)</span> Use the **Pause** option to temporarily pause the instance(s). This will put the demo into a SUSPENDED state.
 
 When suspended, the instance is taken offline and will not be accessible until it is restarted. This is particularly useful in cases where demos or workshops don't complete in the initial meeting and are required for a follow-up, but aren't needed in between. A great use case here would be for running customer workshops where only part of the work gets completed. The instances can be suspended and then restarted when it is time to meet with the customer again.
 
 ## Resume a Paused Instance
-<img src="/images/resume.png" alt="my_page" style="width: 12%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/resume.png" alt="my_page" style="width: 12%; height: auto; display: block; margin: 0;">
 
 When a demo instance is paused (i.e. a "SUSPENDED" state) the **Pause** option will be replaced with a **Resume** option. Click on this button to unpause/resume your demo. Doing so will override the runtime schedule that you set for your demo and will bring your instance back online. Note that Show will still pause/suspend your instance when it reaches the next suspend time as outlined in your runtime schedule.
 
@@ -85,26 +85,26 @@ A paused instance only incurs a minimal cost for the storage volume, saving 99% 
 {{% /notice %}}
 
 ## Reboot Instances
-<img src="/images/reboot.png" alt="my_page" style="width: 15%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/reboot.png" alt="my_page" style="width: 15%; height: auto; display: block; margin: 0;">
 
 <span class="conditional-note">(Only available for Splunk Enterprise instances)</span> Splunk Enterprise-based demo instances can be rebooted at any point from the moment you request them. This applies to both the provisioning process (i.e. if the stacks errors out or is stuck in STARTING for a long time) and also if the instance is already RUNNING but has become unresponsive.
 
 To reboot a demo instance navigate to the demo's management page and click **Reboot**.
 
 ## Transfer Ownership
-<img src="/images/transfer_ownership.png" alt="my_page" style="width: 25%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/transfer_ownership.png" alt="my_page" style="width: 25%; height: auto; display: block; margin: 0;">
 
 You can transfer the ownership of a demo or workshop instance to another user of Splunk Show. A transfer request is then sent to the requested new owner where they can accept or reject the transfer.
 
 <figure style="max-width: 40%; margin: 0 0 1rem 0;">
-  <img src="/images/transfer_ownership_window.png" alt="Enter the new user's email to transfer ownership" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/transfer_ownership_window.png" alt="Enter the new user's email to transfer ownership" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     Enter the new user’s email to transfer ownership
   </figcaption>
 </figure>
 
 ## Add More Data Sources to Your Demo (Data Bundles)
-<img src="/images/add_data_bundles.png" alt="my_page" style="width: 25%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/add_data_bundles.png" alt="my_page" style="width: 25%; height: auto; display: block; margin: 0;">
 
 Data bundles are datasets that you can add to your demo instance. Examples include:
 
@@ -126,20 +126,20 @@ Instances must be in a RUNNING state to access the **+ Add data bundles** option
 {{% /notice %}}
 
 <figure style="max-width: 100%; margin: 0 0 1rem 0;">
-  <img src="/images/add_data.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/add_data.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     Example of adding data bundles to a RUNNING demo instance
   </figcaption>
 </figure>
 
 * **Test HEC connection** - click this button to test the preconfigured HEC endpoint and token. A green tick will appear to indicate that HEC is configured and working.
-<img src="/images/test_hec_connection.png" alt="my_page" style="width: 30%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/test_hec_connection.png" alt="my_page" style="width: 30%; height: auto; display: block; margin: 0;">
 
 
 * **Advance configuration** - click this button to view HEC information and customisation options
 
   <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-    <img src="/images/add_data_advance_config.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+    <img src="/splunk-show-docs/images/add_data_advance_config.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Viewing HEC advanced configuration options
     </figcaption>
@@ -153,7 +153,7 @@ Instances must be in a RUNNING state to access the **+ Add data bundles** option
 
   Type keywords into the search bar to search the available data bundles.
   <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-    <img src="/images/data_bundle_keyword.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+    <img src="/splunk-show-docs/images/data_bundle_keyword.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Data bundle keyword search
     </figcaption>
@@ -161,7 +161,7 @@ Instances must be in a RUNNING state to access the **+ Add data bundles** option
 
   Click on a data bundle tile to view detailed information about app dependencies and any additional setup required, such as any indexes you need to create. Be sure to follow these instructions to ensure that the data onboards correctly!
   <figure style="max-width: 100%; margin: 0 0 1rem 0;">
-    <img src="/images/data_bundle_example.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+    <img src="/splunk-show-docs/images/data_bundle_example.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Example of a data bundle, containing setup information
     </figcaption>
@@ -170,7 +170,7 @@ Instances must be in a RUNNING state to access the **+ Add data bundles** option
 **App dependencies** - click on **Install** to view the app within Splunk's native app installation view.
 
 <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-  <img src="/images/browse_more_apps.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/browse_more_apps.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     BClicking on ‘Install’ for an app dependency will take you to your Splunk instance and populate the app in the search box
   </figcaption>
@@ -180,8 +180,8 @@ Click on **View on Splunkbase** to navigate to the app's Splunkbase page where y
 
 To activate a data bundle, toggle the **Activate** check box on the tile and click the **Activate x datasets** button in the top right to apply your changes.
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
-  <img src="/images/data_bundle_activate.png" alt="Grouped Resources 1" style="width: 80%; height: auto;">
-  <img src="/images/data_bundle_activate_button.png" alt="Grouped Resources 2" style="width: 80%; height: auto;">
+  <img src="/splunk-show-docs/images/data_bundle_activate.png" alt="Grouped Resources 1" style="width: 80%; height: auto;">
+  <img src="/splunk-show-docs/images/data_bundle_activate_button.png" alt="Grouped Resources 2" style="width: 80%; height: auto;">
 </div>
 
 {{% notice info %}}
@@ -201,7 +201,7 @@ Check the details for each data bundle when activating it to make sure you have 
 When you add one or more data bundles to a demo you will see a **Data Sources** section on the management page for your demo.
 
 <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-  <img src="/images/data_sources.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/data_sources.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     A Data Sources section is added to your demo page when you add data bundles
   </figcaption>
@@ -219,7 +219,7 @@ If you need to edit a data bundle - such as to change the HEC token information 
 Locate the requested demo you need to access on the home page under **My instances** and click on the demo. This will bring up the demo management page. Scroll down to the **Connection** or **Instances** section to view the connection URLs, usernames and passwords for your demo.
 
 <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-  <img src="/images/connection_info.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/connection_info.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     Example of connection information for a demo instance
   </figcaption>
@@ -229,13 +229,13 @@ For demos that feature multiple instances, this section will be called **Instanc
 
 <div style="display: flex; gap: 1rem; align-items: stretch; margin-bottom: 1rem;">
   <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
-    <img src="/images/multiple_instances.png" alt="Grouped Resources 1" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
+    <img src="/splunk-show-docs/images/multiple_instances.png" alt="Grouped Resources 1" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Example of a demo with multiple instances
     </figcaption>
   </figure>
   <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
-    <img src="/images/multiple_instances_connection_info.png" alt="Grouped Resources 2" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
+    <img src="/splunk-show-docs/images/multiple_instances_connection_info.png" alt="Grouped Resources 2" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       In a demo with multiple instances, click on the tile to view connection information for that instance
     </figcaption>

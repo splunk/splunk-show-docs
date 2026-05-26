@@ -1,12 +1,12 @@
-+++
-title = "Choosing a Workshop Type"
-weight = 20
-+++
+---
+title: "Choosing a Workshop Type"
+weight: 20
+---
 
 The following flowchart should help you choose the correct workshop type:
 
 <figure style="max-width: 100%; margin: 0 0 1rem 0;">
-  <img src="/images/show_workshop_decision_flow.png" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/show_workshop_decision_flow.png" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">Workshop type decision flowchart</figcaption>
 </figure>
 
