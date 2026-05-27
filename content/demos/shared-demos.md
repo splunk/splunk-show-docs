@@ -30,13 +30,13 @@ To leverage a shared demo, click on the demo and add an activity to reveal the u
 Connection information is displayed once you add an activity.
 
 <div style="display: flex; gap: 1rem; align-items: stretch; margin-bottom: 1rem;">
-  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
+  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column; align-items: center;">
     <img src="/splunk-show-docs/images/connection_info_shared_blurred.png" alt="Example of blurred connection information on a shared demo" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Example of blurred connection information on a shared demo
     </figcaption>
   </figure>
-  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
+  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column; align-items: center;">
     <img src="/splunk-show-docs/images/connection_info_shared_revealed.png" alt="Connection information is revealed when you add an activity" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Connection information is revealed when you add an activity

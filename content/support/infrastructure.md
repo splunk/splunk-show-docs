@@ -18,13 +18,13 @@ If you have a question or issue with demo/workshop content (e.g. "the demo scrip
 {{% /notice %}}
 
 <div style="display: flex; gap: 1rem; align-items: stretch; margin-bottom: 1rem;">
-  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
+  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column; align-items: center;">
     <img src="/splunk-show-docs/images/web_chat_button.png" alt="Use the web chat to get help" style="width: 20%; height: auto; display: block; flex-shrink: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Use the web chat to get help
     </figcaption>
   </figure>
-  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
+  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column; align-items: center;">
     <img src="/splunk-show-docs/images/web_chat.png" alt="Type a message to chat with the Splunk Show team!" style="width: 80%; height: auto; display: block; flex-shrink: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Type a message to chat with the Splunk Show team!

@@ -22,13 +22,13 @@ Since always on demos are shared environments, user permissions are typically re
 To access an always on demo, click on the demo. You will need to add at least one activity before the connection details become available to you. Click on either **Add activity** or **+ New activity** at the bottom of the page to add an activity and reveal the connection information (see [Creating Demos](/demos/creating-demos/#use-case) for information on the activity types.)
 
 <div style="display: flex; gap: 1rem; align-items: stretch; margin-bottom: 1rem;">
-  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
+  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column; align-items: center;">
     <img src="/splunk-show-docs/images/connection_info_always_on_blurred.png" alt="Example of blurred connection information on an always on demo" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Example of blurred connection information on an always on demo
     </figcaption>
   </figure>
-  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
+  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column; align-items: center;">
     <img src="/splunk-show-docs/images/connection_info_always_on_revealed.png" alt="Connection information is revealed when you add an activity" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Connection information is revealed when you add an activity

@@ -251,13 +251,13 @@ This section allows you select what type of workshop you want to run. The follow
 * **Receive an email with the participants at the end of the event** - this option is enabled by default. With this option selected you will automatically receive an email when the event has ended, containing a CSV list of your event participants.
   
   <div style="display: flex; gap: 1rem; align-items: stretch; margin-bottom: 1rem;">
-    <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
+    <figure style="width: 48%; margin: 0; display: flex; flex-direction: column; align-items: center;">
     <img src="/splunk-show-docs/images/participant_list_email.png" alt="Example of a participants list email" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
       <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
         Example of a participants list email
       </figcaption>
     </figure>
-    <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
+    <figure style="width: 48%; margin: 0; display: flex; flex-direction: column; align-items: center;">
     <img src="/splunk-show-docs/images/participant_csv.png" alt="Example of a participants list in CSV format" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
       <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
         Example of a participants list in CSV format

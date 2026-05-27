@@ -33,13 +33,13 @@ Click on a template tile (not the 'New…' button but the tile itself) to view i
 **Grouped Resources** - <span class="conditional-note">(only displayed in some templates)</span> where a template includes more than one platform type, this section is included to indicate the platforms included and the versions for each.
 
 <div style="display: flex; gap: 1rem; align-items: stretch; margin-bottom: 1rem;">
-  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
+  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column; align-items: center;">
     <img src="/splunk-show-docs/images/grouped_resources_01.png" alt="Grouped Resources 1" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Grouped resources example 1
     </figcaption>
   </figure>
-  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
+  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column; align-items: center;">
     <img src="/splunk-show-docs/images/grouped_resources_02.png" alt="Grouped Resources 2" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Grouped resources example 2

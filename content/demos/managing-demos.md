@@ -228,13 +228,13 @@ Locate the requested demo you need to access on the home page under **My instanc
 For demos that feature multiple instances, this section will be called **Instances** and will display a tile for each instance. Clicking on the instance tile will present you with the full connection information for that instance.
 
 <div style="display: flex; gap: 1rem; align-items: stretch; margin-bottom: 1rem;">
-  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
+  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column; align-items: center;">
     <img src="/splunk-show-docs/images/multiple_instances.png" alt="Grouped Resources 1" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       Example of a demo with multiple instances
     </figcaption>
   </figure>
-  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column;">
+  <figure style="width: 48%; margin: 0; display: flex; flex-direction: column; align-items: center;">
     <img src="/splunk-show-docs/images/multiple_instances_connection_info.png" alt="Grouped Resources 2" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
     <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
       In a demo with multiple instances, click on the tile to view connection information for that instance

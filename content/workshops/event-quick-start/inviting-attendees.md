@@ -33,13 +33,13 @@ Open your workshop in Show by clicking on it under the _My instances_ section of
 Paste in a CSV list of the attendees' email addresses and click **SEND INVITES**. They will receive an email invite with a link to the event.
 
 <div style="display: flex; gap: 1rem; align-items: stretch; margin-bottom: 1rem;">
-    <figure style="width: 45%; margin: 0; display: flex; flex-direction: column;">
+    <figure style="width: 45%; margin: 0; display: flex; flex-direction: column; align-items: center;">
     <img src="/splunk-show-docs/images/invite_people_modal.png" alt="Add a csv list of event participants to send them an invite email" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
       <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
         Add a csv list of event participants to send them an invite email
       </figcaption>
     </figure>
-    <figure style="width: 55%; margin: 0; display: flex; flex-direction: column;">
+    <figure style="width: 55%; margin: 0; display: flex; flex-direction: column; align-items: center;">
     <img src="/splunk-show-docs/images/invite_email.png" alt="Example of an event invite email" style="width: 100%; height: auto; display: block; flex-shrink: 0;">
       <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
         Example of an event invite email
