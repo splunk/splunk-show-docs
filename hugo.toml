@@ -89,6 +89,9 @@ defaultContentLanguage = "en"
   showLightTrails = true
   contentMaxWidth = "720px"
 
+  heroBackgroundLight = "images/background_Splunk-light.png"
+  heroBackgroundDark  = "images/background_Splunk-dark.png"
+
   editURL = ""
   repoURL = ""
 

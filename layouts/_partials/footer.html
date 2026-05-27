@@ -40,7 +40,8 @@
     {{ end }}
   </div>
 
-  <div class="site-footer__legal">
+  <div class="site-footer__legal" style="justify-content: flex-start; gap: 1rem; align-items: center;">
+    <img src="{{ "images/splunk_cisco_logo.png" | relURL }}" alt="Splunk, a Cisco company" style="height: 3.5rem; width: auto; flex-shrink: 0;">
     <span class="site-footer__copyright">
       {{- /* Override via [params] copyright in hugo.toml. Falls back to "© <year> <title>". */ -}}
       {{- with $p.copyright -}}

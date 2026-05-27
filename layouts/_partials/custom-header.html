@@ -8,6 +8,7 @@
   .toc__label,
   .pager__label,
   .workshop-meta__label,
+  .card__meta,
   h5, h6 {
     text-transform: none;
   }
@@ -70,6 +71,10 @@
     --color-paper-dark: #202020;
     --color-border: #4a4a4a;
   }
+  .site-footer__meta,
+  .light-trails--footer {
+    display: none;
+  }
   .breadcrumb {
     margin-bottom: 0.75rem;
   }
@@ -83,8 +88,30 @@
   .page {
     padding-top: calc(var(--header-h) + 1rem);
   }
+  .hero {
+    padding: 0;
+  }
+  .hero .page {
+    padding-top: calc(var(--header-h) + clamp(1.5rem, 4vw, 3rem));
+    padding-bottom: clamp(1.5rem, 4vw, 3rem);
+  }
+  .hero .page--small-pad-top {
+    width: 100%;
+  }
+  .hero__inner {
+    text-align: center;
+    margin: 0 auto;
+  }
   .hero__title,
   .hero__lead {
     text-align: center;
+  }
+  .light-trails--hero {
+    background-image: url("/splunk-show-docs/images/background_Splunk-light.png") !important;
+    background-size: cover !important;
+    background-position: right center !important;
+  }
+  [data-theme="dark"] .light-trails--hero {
+    background-image: url("/splunk-show-docs/images/background_Splunk-dark.png") !important;
   }
 </style>
