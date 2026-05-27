@@ -1,6 +1,7 @@
 ---
 title: "Account Settings"
 weight: 60
+icon: "sliders"
 ---
 
 <!-- # Account Settings -->

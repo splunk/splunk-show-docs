@@ -1,6 +1,7 @@
 ---
 title: "Signing In"
 weight: 5
+icon: "log-in"
 ---
 
 <!-- # Signing In -->

@@ -1,6 +1,7 @@
 ---
 title: "Catalog Page"
 weight: 20
+icon: "library"
 ---
 
 <!--# Catalog Page -->

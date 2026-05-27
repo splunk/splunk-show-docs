@@ -1,6 +1,7 @@
 ---
 title: "Workshops/Events"
 weight: 40
+icon: "calendar"
 ---
 
 <!-- # Workshops -->

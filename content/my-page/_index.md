@@ -1,6 +1,7 @@
 ---
 title: "My Page"
 weight: 10
+icon: "layout-dashboard"
 ---
 
 <!-- # My Page -->

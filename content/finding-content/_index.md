@@ -1,6 +1,7 @@
 ---
 title: "Finding Content"
 weight: 15
+icon: "search"
 ---
 
 <!-- # Find a Demo or Workshop (New Instance / Select a Template Page) -->

@@ -1,6 +1,7 @@
 ---
 title: "Get Support"
 weight: 70
+icon: "life-buoy"
 ---
 
 <!-- # Support -->

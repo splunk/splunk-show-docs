@@ -1,6 +1,7 @@
 ---
 title: "Public Page"
 weight: 50
+icon: "globe"
 ---
 
 <!-- # Public Page -->

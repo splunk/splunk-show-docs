@@ -1,6 +1,7 @@
 ---
 title: "Demos"
 weight: 30
+icon: "play-circle"
 ---
 
 <!-- # Demos -->
