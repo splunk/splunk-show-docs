@@ -1,7 +1,7 @@
-+++
-title = "Quick Start: Creating an Event"
-weight = 30
-+++
+---
+title: "Quick Start: Creating an Event"
+weight: 30
+---
 
 {{% notice note %}}
 The steps on this page are simplified. Please see the [Creating a Workshop/Event](/workshops/creating-workshops/) for complete details of all possible available configuration options.
@@ -11,17 +11,17 @@ The steps on this page are simplified. Please see the [Creating a Workshop/Event
 
 ### 1. Navigate to Create Workshop
 
-Log in to [Splunk Show](https://show.splunk.com) and [find the workshop template you need](/finding-content). Click on **Launch instance** (if browsing via the Catalog page) or **New workshop** (if you're on the template page).
+Log in to [Splunk Show](https://show.splunk.com) and [find the workshop template you need](/finding-content/). Click on **Launch instance** (if browsing via the Catalog page) or **New workshop** (if you're on the template page).
 
 <figure style="max-width: 100%; margin: 0 0 1rem 0;">
-  <img src="/images/new_workshop_button.png" alt="The New Workshop button on the template page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/new_workshop_button.png" alt="The New Workshop button on the template page" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     The New Workshop button on the template page
   </figcaption>
 </figure>
 
 <figure style="max-width: 100%; margin: 0 0 1rem 0;">
-  <img src="/images/launch_instance_button.png" alt="The Launch Instance button on the Catalog page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/launch_instance_button.png" alt="The Launch Instance button on the Catalog page" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     The Launch Instance button on the Catalog page
   </figcaption>
@@ -42,7 +42,7 @@ For customer workshops always tie your request to a Salesforce account, opportun
 
 ##### Workshop Type
 
-Choose either **Private event** or **Public event** depending on which one you need (see [this flowchart](../choosing-workshop-type/)).
+Choose either **Private event** or **Public event** depending on which one you need (see [this flowchart](/workshops/event-quick-start/choosing-workshop-type/)).
 
 ##### Provisioning Start
 
@@ -83,7 +83,7 @@ To avoid instances being terminated during the workshop, **ensure your attendees
 {{% /notice %}}
 
 {{% notice info %}}
-If you intend on just sharing the instance details with your participants via a CSV list (i.e. not having them enrol in an event via Splunk Show) then we recommend you run your workshop as a '[Normal Workshop](/workshops/creating-workshops)' and not an event.
+If you intend on just sharing the instance details with your participants via a CSV list (i.e. not having them enrol in an event via Splunk Show) then we recommend you run your workshop as a '[Normal Workshop](/workshops/creating-workshops/)' and not an event.
 {{% /notice %}}
 
 ##### Allow Anonymous Enrolment via Passcode
@@ -94,4 +94,4 @@ If you intend on just sharing the instance details with your participants via a 
 
 Review your settings and click **Create.**
 
-You can now start [inviting your attendees](../inviting-attendees/)!
+You can now start [inviting your attendees](/workshops/event-quick-start/inviting-attendees/)!

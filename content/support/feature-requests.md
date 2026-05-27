@@ -1,7 +1,7 @@
-+++
-title = "Feature Requests"
-weight = 30
-+++
+---
+title: "Feature Requests"
+weight: 30
+---
 
 <!-- # Feature Requests/Demo Enhancement Requests -->
 

@@ -1,0 +1,23 @@
+{{- /*
+  Override: Always return a workshop root for non-home pages so the sidebar
+  renders on every section, including leaf sections with no child pages.
+*/ -}}
+{{- $page := . -}}
+{{- $root := false -}}
+
+{{- if and (not $page.IsHome) (ne $page.Kind "404") (ne $page.Kind "taxonomy") -}}
+  {{- $candidates := slice $page | append $page.Ancestors -}}
+  {{- $n := len $candidates -}}
+  {{- $found := false -}}
+  {{- range seq $n -}}
+    {{- if not $found -}}
+      {{- $cand := index $candidates (sub $n .) -}}
+      {{- if not $cand.IsHome -}}
+        {{- $root  = $cand -}}
+        {{- $found = true -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $root -}}

@@ -1,0 +1,130 @@
+{{- $p := .Site.Params -}}
+{{- /* Two-tier dark footer in the Material-for-MkDocs style.
+
+       Top tier ("meta")  : brand wordmark + tagline + social icon row.
+       Bottom tier ("legal"): copyright + "Built with Hugo" attribution.
+
+       The footer is always dark regardless of the active theme — gives every
+       page a consistent grounding zone. The brand bloom (light-trails) sits
+       behind it, mirrored to anchor on the left. */ -}}
+<footer class="site-footer">
+  {{ if $p.showLightTrails }}<div class="light-trails light-trails--footer" aria-hidden="true"></div>{{ end }}
+  <div class="site-footer__meta">
+    <div class="site-footer__brand">
+      <a href="{{ partial "site-href.html" "/" }}" class="brand brand--block brand--footer">
+        {{- if $p.logoLight -}}
+          {{- /* In the dark footer, prefer the dark-mode logo if available. */ -}}
+          {{- $logo := $p.logoDark | default $p.logoLight -}}
+          <img class="brand__logo" src="{{ $logo | relURL }}" alt="{{ .Site.Title | markdownify | plainify }}">
+        {{- else -}}
+          <span class="brand__mark">{{ $p.brandName | default "splunk>" }}</span>
+        {{- end -}}
+        {{ with $p.brandTagline }}<span class="brand__tag">{{ . }}</span>{{ end }}
+      </a>
+      <p class="site-footer__desc">{{ $p.description }}</p>
+    </div>
+
+    {{ with $p.social }}
+    {{- $hasAny := or .github (or .twitter (or .linkedin (or .youtube (or .mastodon (or .bluesky .rss))))) -}}
+    {{- if $hasAny }}
+    <ul class="site-footer__social" aria-label="Social links">
+      {{ with .github   }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="GitHub">{{ partial "icon-svg.html" "github"   }}</a></li>{{ end }}
+      {{ with .twitter  }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="X (Twitter)">{{ partial "icon-svg.html" "x"        }}</a></li>{{ end }}
+      {{ with .linkedin }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn">{{ partial "icon-svg.html" "linkedin" }}</a></li>{{ end }}
+      {{ with .youtube  }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="YouTube">{{ partial "icon-svg.html" "youtube"  }}</a></li>{{ end }}
+      {{ with .mastodon }}<li><a href="{{ . }}" target="_blank" rel="noopener me" aria-label="Mastodon">{{ partial "icon-svg.html" "mastodon" }}</a></li>{{ end }}
+      {{ with .bluesky  }}<li><a href="{{ . }}" target="_blank" rel="noopener" aria-label="Bluesky">{{ partial "icon-svg.html" "bluesky"  }}</a></li>{{ end }}
+      {{ with .rss      }}<li><a href="{{ partial "site-href.html" . }}" rel="alternate" type="application/rss+xml" aria-label="RSS">{{ partial "icon-svg.html" "rss"      }}</a></li>{{ end }}
+    </ul>
+    {{- end }}
+    {{ end }}
+  </div>
+
+  <div class="site-footer__legal" style="justify-content: flex-start; gap: 1rem; align-items: center;">
+    <img src="{{ "images/splunk_cisco_logo.png" | relURL }}" alt="Splunk, a Cisco company" style="height: 3.5rem; width: auto; flex-shrink: 0;">
+    <span class="site-footer__copyright">
+      {{- /* Override via [params] copyright in hugo.toml. Falls back to "© <year> <title>". */ -}}
+      {{- with $p.copyright -}}
+        {{ . | replaceRE "\\{year\\}" (printf "%d" now.Year) | safeHTML }}
+      {{- else -}}
+        &copy; {{ now.Year }} {{ .Site.Title }}
+      {{- end -}}
+    </span>
+    {{- with $p.versionBadgeRepo }}
+    <span class="site-footer__version">
+      <img src="https://img.shields.io/github/v/release/{{ . }}?label={{ i18n "workshopVersion" | default "Workshop Version" | urlquery }}&color={{ $p.versionBadgeColor | default "FF007F" }}"
+           alt="{{ i18n "workshopVersion" | default "Workshop Version" }}"
+           loading="lazy">
+    </span>
+    {{- end }}
+  </div>
+</footer>
+
+{{- /* Lazy-load KaTeX / Mermaid only when a page needs them.
+       Placed in footer so content has rendered and Store flags are set.
+       SRI hashes pinned to versions below — bump them together. */ -}}
+{{ if .Store.Get "_needs_katex" }}
+  {{- /* SRI hashes verified against the CDN at build time. To bump KaTeX:
+         1. Update the version triple below.
+         2. Recompute hashes:
+              curl -sL <url> | openssl dgst -sha384 -binary | openssl base64 -A */ -}}
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+        integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"
+          integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+          integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk"
+          crossorigin="anonymous"
+          onload='renderMathInElement(document.body, {delimiters:[{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}], throwOnError:false})'></script>
+{{ end }}
+{{ if .Store.Get "_needs_mermaid" }}
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs";
+    const themeFor = () => document.documentElement.dataset.theme === "dark" ? "dark" : "default";
+    // securityLevel "strict" blocks HTML labels and click handlers in diagrams.
+    // Workshops occasionally embed Mermaid from un-reviewed contributors; strict
+    // mode removes the XSS-adjacent surface. If you need clickable diagrams or
+    // raw-HTML labels, downgrade per-site rather than re-enabling it globally.
+    const init = () => mermaid.initialize({ startOnLoad: false, theme: themeFor(), securityLevel: "strict" });
+
+    // Stash the original mermaid source BEFORE the first mermaid.run() —
+    // mermaid mutates each .mermaid element's textContent into rendered
+    // SVG asynchronously, so reading textContent any time after run()
+    // is fired races against the mutation. Without this pre-stash, theme
+    // toggling reads `data-mermaid-source` containing SVG instead of the
+    // original diagram syntax → mermaid throws "syntax error in text".
+    document.querySelectorAll(".mermaid").forEach(el => {
+      if (!el.getAttribute("data-mermaid-source")) {
+        el.setAttribute("data-mermaid-source", el.textContent.trim());
+      }
+    });
+
+    init();
+    mermaid.run({ querySelector: ".mermaid" });
+    // Re-render diagrams when the user toggles light/dark. Debounce the
+    // callback so a rapid light→dark→light flip doesn't race the async
+    // mermaid.run() and leave a diagram in the stale theme. Disconnect
+    // on pagehide so the observer doesn't outlive the page in bfcache.
+    let rerunTimer = null;
+    const observer = new MutationObserver(() => {
+      clearTimeout(rerunTimer);
+      rerunTimer = setTimeout(async () => {
+        init();
+        document.querySelectorAll(".mermaid[data-processed]").forEach(el => {
+          const src = el.getAttribute("data-mermaid-source");
+          if (!src) return;
+          el.removeAttribute("data-processed");
+          el.innerHTML = src;
+        });
+        await mermaid.run({ querySelector: ".mermaid" });
+      }, 60);
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+    window.addEventListener("pagehide", () => observer.disconnect(), { once: true });
+  </script>
+{{ end }}

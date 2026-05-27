@@ -1,7 +1,7 @@
-+++
-title = "What is a Splunk Show 'Event'?"
-weight = 10
-+++
+---
+title: "What is a Splunk Show 'Event'?"
+weight: 10
+---
 
 In Splunk Show you have three options for running a hands-on customer workshop:
 

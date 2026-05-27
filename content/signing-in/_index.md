@@ -1,7 +1,7 @@
-+++
-title = "Signing In"
-weight = 5
-+++
+---
+title: "Signing In"
+weight: 5
+---
 
 <!-- # Signing In -->
 

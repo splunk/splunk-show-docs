@@ -1,0 +1,36 @@
+{{- $home := site.Home -}}
+{{- $current := . -}}
+<aside id="workshop-sidebar" class="sidebar" aria-label="Site navigation" data-workshop-root="{{ $home.RelPermalink }}">
+  <a class="sidebar__title{{ if .IsHome }} is-active{{ end }}" href="{{ $home.RelPermalink }}">{{ site.Title }}</a>
+
+  <ol class="sidebar-tree sidebar-tree--depth-0">
+  {{- range where site.Sections "Kind" "section" -}}
+    {{- $isCurrent := eq .RelPermalink $current.RelPermalink -}}
+    {{- $isOnPath := or $isCurrent (hasPrefix $current.RelPermalink .RelPermalink) -}}
+    {{- $hasChildren := gt (len .Pages) 0 -}}
+    {{- if $hasChildren -}}
+  <li class="sidebar-tree__group{{ if $isOnPath }} is-open{{ end }}">
+  <details{{ if $isOnPath }} open{{ end }} data-section-url="{{ .RelPermalink }}">
+  <summary class="sidebar-tree__summary"><span class="sidebar-tree__chev" aria-hidden="true"></span><span class="sidebar-tree__chapter">{{ .LinkTitle }}</span></summary>
+  <a class="sidebar-tree__self{{ if $isCurrent }} is-active{{ end }}" href="{{ .RelPermalink }}" data-page-url="{{ .RelPermalink }}"{{ if $isCurrent }} aria-current="page"{{ end }}>Overview</a>
+  {{ partial "sidebar-tree.html" (dict "section" . "current" $current "depth" 1) }}
+  </details>
+  </li>
+    {{- else -}}
+  <li class="sidebar-tree__leaf">
+  <a class="sidebar-tree__link{{ if $isCurrent }} is-active{{ end }}" href="{{ .RelPermalink }}" data-page-url="{{ .RelPermalink }}"{{ if $isCurrent }} aria-current="page"{{ end }}>{{ .LinkTitle }}</a>
+  </li>
+    {{- end -}}
+  {{- end -}}
+  </ol>
+
+  <div class="sidebar-resources">
+    <hr class="sidebar-resources__divider">
+    <p class="sidebar-resources__heading">Resources</p>
+    <ul class="sidebar-resources__list">
+      <li><a href="https://splunk.show/release-notes" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>Release Notes <span class="sidebar-resources__note">(Splunkers only)</span></a></li>
+      <li><a href="https://show.splunk.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Splunk Show Portal</a></li>
+      <li><a href="https://splunk.enterprise.slack.com/archives/C02EQU3B9HR" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M14 19v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5S16.33 19 15.5 19H14z"/><path d="M10 9.5C10 10.33 9.33 11 8.5 11h-5C2.67 11 2 10.33 2 9.5S2.67 8 3.5 8h5c.83 0 1.5.67 1.5 1.5z"/><path d="M10 5V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5H10z"/></svg>Support Slack <span class="sidebar-resources__note">(Splunkers only)</span></a></li>
+    </ul>
+  </div>
+</aside>

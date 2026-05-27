@@ -1,35 +1,22 @@
-+++
-title = "Splunk Show Documentation"
-description = "A comprehensive user guide for using the Splunk Show platform"
-+++
+---
+title: "Splunk Show Documentation"
+description: "A comprehensive user guide for using the Splunk Show platform"
+---
 
 <style>
-  /* Default: hide both */
   .theme-image-light, .theme-image-dark { display: none !important; margin: 0 auto; }
-
-  /* Explicit splunk-light */
-  :root[data-r-theme-variant="splunk-light"] .theme-image-light { display: block !important; }
-  :root[data-r-theme-variant="splunk-light"] .theme-image-dark { display: none !important; }
-
-  /* Explicit splunk-dark */
-  :root[data-r-theme-variant="splunk-dark"] .theme-image-light { display: none !important; }
-  :root[data-r-theme-variant="splunk-dark"] .theme-image-dark { display: block !important; }
-
-  /* Auto mode: OS light preference */
+  [data-theme="light"] .theme-image-light { display: block !important; }
+  [data-theme="dark"] .theme-image-dark { display: block !important; }
   @media (prefers-color-scheme: light) {
-    :root[data-r-theme-variant="auto"] .theme-image-light { display: block !important; }
-    :root[data-r-theme-variant="auto"] .theme-image-dark { display: none !important; }
+    html:not([data-theme="dark"]) .theme-image-light { display: block !important; }
   }
-
-  /* Auto mode: OS dark preference */
   @media (prefers-color-scheme: dark) {
-    :root[data-r-theme-variant="auto"] .theme-image-light { display: none !important; }
-    :root[data-r-theme-variant="auto"] .theme-image-dark { display: block !important; }
+    html:not([data-theme="light"]) .theme-image-dark { display: block !important; }
   }
 </style>
 
-<img src="/images/welcome_to_the_show_light.png" alt="welcome" class="theme-image-light" style="max-width: 70%; height: auto;">
-<img src="/images/welcome_to_the_show_dark.png" alt="welcome" class="theme-image-dark" style="max-width: 70%; height: auto;">
+<img src="/splunk-show-docs/images/welcome_to_the_show_light.png" alt="welcome" class="theme-image-light" style="max-width: 60%; height: auto;">
+<img src="/splunk-show-docs/images/welcome_to_the_show_dark.png" alt="welcome" class="theme-image-dark" style="max-width: 60%; height: auto;">
 
 <!-- # Welcome to Splunk Show -->
 
@@ -37,9 +24,9 @@ Splunk Show is a platform to request demonstration instances across Splunk Cloud
 
 This documentation will walk you through the major steps in navigating the interface and some best practices when requesting instances.
 
-**Click-through tutorial:** Visit [splunk.show/tutorial](https://splunk.show/tutorial) to get a quick guided tour of the Splunk Show UI including:
+{{% notice info %}}
+**<img src="/splunk-show-docs/images/click-through-icon.png" alt="" style="display: inline; height: 1.2em; width: auto; vertical-align: middle; margin-right: 0.3em;">Click-through tutorial**
 
-* Navigating Splunk Show
-* Creating a Demo
-* Creating a Workshop
-* and more!
+Visit [splunk.show/tutorial](https://splunk.show/tutorial) to get a quick guided tour of the Splunk Show UI including navigating the UI, creating a demo, creating a workshop and more!
+
+{{% /notice %}}
