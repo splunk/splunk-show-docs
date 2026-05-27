@@ -51,6 +51,21 @@
     height: 0.9rem;
     flex-shrink: 0;
   }
+  .sidebar-resources__note {
+    color: rgba(230, 230, 230, 0.8);
+  }
+  :root:not([data-theme="dark"]) .sidebar-resources__heading {
+    color: rgba(0, 0, 0, 1);
+  }
+  :root:not([data-theme="dark"]) .sidebar-resources__note {
+    color: rgba(80, 80, 80, 0.7);
+  }
+  [data-theme="dark"] .sidebar-resources__heading {
+    color: rgba(255, 255, 255, 1);
+  }
+  [data-theme="dark"] .sidebar-resources__note {
+    color: rgba(230, 230, 230, 0.8);
+  }
   .pager__btn {
     border-color: transparent;
   }
