@@ -1,0 +1,53 @@
+{{- if .IsHome -}}{{- return -}}{{- end -}}
+{{- if eq (.Params.nopager | default false) true -}}{{- return -}}{{- end -}}
+
+{{- $prev := false -}}{{- $next := false -}}
+
+{{- /* Shortcode overrides — already {url, title} dicts. */ -}}
+{{- with .Page.Scratch.Get "pager_override_prev" -}}{{- $prev = . -}}{{- end -}}
+{{- with .Page.Scratch.Get "pager_override_next" -}}{{- $next = . -}}{{- end -}}
+
+{{- if or (not $prev) (not $next) -}}
+  {{- /* Build a global flat list across all top-level sections, sorted by
+         weight, so Next/Prev navigate seamlessly across section boundaries. */ -}}
+  {{- $allPages := slice -}}
+  {{- range sort site.Sections "Weight" -}}
+    {{- $allPages = $allPages | append . -}}
+    {{- $sub := partialCached "flat-pages.html" . .RelPermalink -}}
+    {{- if $sub -}}{{- $allPages = $allPages | append $sub -}}{{- end -}}
+  {{- end -}}
+
+  {{- $idx := -1 -}}
+  {{- range $i, $p := $allPages -}}
+    {{- if and (eq $idx -1) (eq $p.RelPermalink $.RelPermalink) -}}{{- $idx = $i -}}{{- end -}}
+  {{- end -}}
+
+  {{- if and (not $prev) (gt $idx 0) -}}
+    {{- $p := index $allPages (sub $idx 1) -}}
+    {{- $prev = dict "url" $p.RelPermalink "title" $p.LinkTitle -}}
+  {{- end -}}
+  {{- if and (not $next) (ge $idx 0) (lt $idx (sub (len $allPages) 1)) -}}
+    {{- $p := index $allPages (add $idx 1) -}}
+    {{- $next = dict "url" $p.RelPermalink "title" $p.LinkTitle -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if or $prev $next -}}
+{{- $cls := "pager" -}}
+{{- if and $prev (not $next) }}{{ $cls = "pager pager--end" }}{{ end -}}
+{{- if and $next (not $prev) }}{{ $cls = "pager pager--start" }}{{ end -}}
+<nav class="{{ $cls }}" aria-label="Page navigation">
+  {{ with $prev }}
+    <a class="pager__btn pager__btn--prev" href="{{ .url }}" rel="prev">
+      <span class="pager__label">{{ i18n "previous" }}</span>
+      <span class="pager__title">{{ .title | markdownify }}</span>
+    </a>
+  {{ end }}
+  {{ with $next }}
+    <a class="pager__btn pager__btn--next" href="{{ .url }}" rel="next">
+      <span class="pager__label">{{ i18n "next" }}</span>
+      <span class="pager__title">{{ .title | markdownify }}</span>
+    </a>
+  {{ end }}
+</nav>
+{{- end -}}

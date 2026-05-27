@@ -104,7 +104,7 @@ In addition to the options available for a 'Normal workshop', events have the fo
 
 {{% notice info %}}
 **Want to know when someone has enrolled in your event?**  
-You can optionally enable the 'ON USER ENROLLMENT TO EVENT' Email or Slack (Splunkers only) notification(s) under your Show user settings.
+You can optionally enable the 'ON USER ENROLLMENT TO EVENT' Email or Slack <span class="badge-splunkers">Splunkers only</span> notification(s) under your Show user settings.
 
 <figure style="max-width: 100%; margin: 0 0 1rem 0;">
   <img src="/splunk-show-docs/images/enrolment_notification.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">

@@ -5,7 +5,9 @@ weight: 10
 
 <!-- # Infrastructure Issues -->
 
-For issues using the platform, or if you have a technical issue with a demo or workshop, please reach out to the [#splunk-show](https://splunk.slack.com/archives/C02EQU3B9HR) (Splunkers only) Slack channel or use the web chat feature in the bottom right corner of Splunk Show.
+For issues using the platform, or if you have a technical issue with a demo or workshop, please reach out to:
+- The [#splunk-show](https://splunk.slack.com/archives/C02EQU3B9HR) Slack channel <span class="badge-splunkers">Splunkers only</span>
+- The web chat feature in the bottom right corner of Splunk Show.
 
 {{% notice important %}}
 **Web Chat Support Hours**  
