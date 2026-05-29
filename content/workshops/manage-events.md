@@ -31,7 +31,7 @@ In addition to the options available for a 'Normal workshop', events have the fo
     </figcaption>
   </figure> 
 
-  {{% notice tip %}}
+  {{% notice style="tip" title="User Notes Tip" %}}
   Enter useful workshop resource URLs to help your attendees!
   {{% /notice %}}
 
@@ -44,8 +44,7 @@ In addition to the options available for a 'Normal workshop', events have the fo
     </figcaption>
   </figure>
 
-  {{% notice info %}}
-  **Participants List**  
+  {{% notice style="info" title="Participants List" %}}
   You should also automatically receive a list of event participants by leaving 'Receive an email with the participants at the end of the event' enabled when creating your event.
   {{% /notice %}}
 
@@ -102,9 +101,9 @@ In addition to the options available for a 'Normal workshop', events have the fo
   </figure>
 </div>
 
-{{% notice info %}}
+{{% notice style="info" title="Enrolment Notifications" %}}
 **Want to know when someone has enrolled in your event?**  
-You can optionally enable the 'ON USER ENROLLMENT TO EVENT' Email or Slack <span class="badge-splunkers">Splunkers only</span> notification(s) under your Show user settings.
+You can optionally enable the 'ON USER ENROLLMENT TO EVENT' Email or Slack (<span class="badge-splunkers">Splunkers only</span>) notification(s) under your Show user settings.
 
 <figure style="max-width: 100%; margin: 0 0 1rem 0;">
   <img src="/splunk-show-docs/images/enrolment_notification.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
@@ -154,8 +153,7 @@ Edit the schedule by scrolling to the **Provisioning Time** section and clicking
 
 <img src="/splunk-show-docs/images/edit_prov_time.png" alt="my_page" style="width: 70%; height: auto; display: block; margin: 0;">
 
-{{% notice info %}}
-**Event Already RUNNING?**  
+{{% notice style="info" title="Event Already RUNNING?" %}}
 If your event is already showing as RUNNING you cannot change the provisioning or start times. You can, however, still edit the instance running schedule under the **Schedule** section or extend the life of your workshop instances by clicking *Change lifetime* (top right of the page) and choosing a new expiry date for your workshop (see [Managing Demos](/demos/managing-demos/#extend-instances-change-lifetime) for more information).
 {{% /notice %}}
 
@@ -181,8 +179,7 @@ Enabling this option will provide you with unique passcode for you event, which 
 
 <img src="/splunk-show-docs/images/passcode_copy.png" alt="my_page" style="width: 60%; height: auto; display: block; margin: 0;">
 
-{{% notice info %}}
-### Enrolling Using a Passcode
+{{% notice style="info" title="Enrolling Using a Passcode" %}}
 
 When a user is given a passcode they will visit the usual event link and this will take them to the usual sign in page. From here they will click on **Enter a passcode instead** and enter/paste the passcode.
 
@@ -219,8 +216,7 @@ Click on **Go to instance** to access the instance.
   </figcaption>
 </figure>
 
-{{% notice info %}}
-**When are Instances Assigned to Users?**  
+{{% notice style="info" title="When Are Instances Assigned to Users?" %}}
 When a user enrols in a workshop Show will assign them an instance (provided the instances are running.)
 {{% /notice %}}
 

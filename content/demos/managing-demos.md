@@ -51,8 +51,7 @@ The normal process of extending up to 14 days for SFDC activities has not change
 
 If your manager is not available to approve an extension you can extend 1 day at a time without approval - this can help if an extension is needed at short notice. If your manager is away for a longer period and so cannot approve a longer extension any time soon, please reach out to us via the [#splunk-show](https://splunk.enterprise.slack.com/archives/C02EQU3B9HR) Slack channel for guidance.
 
-{{% notice info %}}
-**14 day Limit for Extending Cloud Instances**  
+{{% notice style="info" title="14 Day Limit for Cloud Instance Extensions" %}}
 Cloud-based demos - such as those which leverage Splunk Cloud Platform, SOAR or Splunk Cloud Services (SCS) - can only be extended a maximum of 14 days each time. While there is no limit to the number of times you can extend a Cloud instance, you can only do so in 14 day increments.
 {{% /notice %}}
 
@@ -70,13 +69,11 @@ When a demo instance is paused (i.e. a "SUSPENDED" state) the **Pause** option w
 
 For example: If your demo is set to run 09.00–18.00 for several days it will suspend at 18.00 each day. If you were to manually resume the stack in the evening on one of those days the demo will come back to a RUNNING state and will continue to run through until 18.00 the next day when Show will suspend again as per the schedule.
 
-{{% notice info %}}
-**Running Costs** 💸  
+{{% notice style="info" title="Running Costs" %}}
 A paused instance only incurs a minimal cost for the storage volume, saving 99% over a running instance in most cases!
 {{% /notice %}}
 
-{{% notice info %}}
-**Instance Control Considerations**
+{{% notice style="info" title="Instance Control Considerations" %}}
 
 * If you need to access an instance outside of the scheduled operating hours, there are two options:
   * **Manually resume the instance** - Pausing an instance within the scheduled operating hours will put it into a suspended state until the next scheduled start time. The opposite is the case as well: resuming/unpausing an instance outside of the operating hours will leave it online until the next scheduled stop time.
@@ -120,8 +117,7 @@ Data is sent to instances using Splunk's HTTP Event Collector (HEC).
 
 To activate a data bundle, browse to the management page of your running demo (i.e. click on the running demo from the home page) and click **+ Add data bundles**. This will display the **Add data** page.
 
-{{% notice info %}}
-**Add data bundle option greyed out?**  
+{{% notice style="info" title="Add Data Bundle Option Greyed Out?" %}}
 Instances must be in a RUNNING state to access the **+ Add data bundles** option. If your instance is still in provisioning or is currently rebooting then this option will be greyed out.
 {{% /notice %}}
 
@@ -184,13 +180,11 @@ To activate a data bundle, toggle the **Activate** check box on the tile and cli
   <img src="/splunk-show-docs/images/data_bundle_activate_button.png" alt="Grouped Resources 2" style="width: 80%; height: auto;">
 </div>
 
-{{% notice info %}}
-**Activating and Deactivating Data Bundles**  
+{{% notice style="info" title="Activating and Deactivating Data Bundles" %}}
 Due to the way data bundles work, when you activate or deactivate a data bundle your instance will temporarily display as STARTING in Show. Your instance should show as RUNNING after the changes have been made.
 {{% /notice %}}
 
-{{% notice note %}}
-**Data Bundle Setup**  
+{{% notice style="note" title="Data Bundle Setup" %}}
 Please note that activating a data bundle in Show is just one step in the process - you will need to install the required apps/TAs and create indexes in order for the data to ingest correctly!
 
 Check the details for each data bundle when activating it to make sure you have all the prerequisites complete!
@@ -207,8 +201,7 @@ When you add one or more data bundles to a demo you will see a **Data Sources** 
   </figcaption>
 </figure>
 
-{{% notice note %}}
-**Need to Edit a Data Bundle?**  
+{{% notice style="note" title="Need to Edit a Data Bundle?" %}}
 You cannot edit a data bundle once it is active.
 {{% /notice %}}
 

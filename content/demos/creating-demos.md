@@ -7,8 +7,8 @@ weight: 10
 
 When you click on the **New demo** button for a demo template you are taken to the **New demo** page with the following options available to you:
 
-{{% notice info %}}
-**Note:** These options may vary by template
+{{% notice style="info" title="Note" %}}
+These options may vary by template
 {{% /notice %}}
 
 ## New demo
@@ -81,11 +81,10 @@ The reason for the demo instance, which has several options (Please expand the s
 ## Network
   <img src="/splunk-show-docs/images/network_demo.png" alt="my_page" style="width: 60%; height: auto; display: block; margin: 0;">
 
-* **SSH access** -<span class="label">Splunkers Only</span><span class="restriction-note"> (only available on some Some Enterprise based templates)</span> this option allows you to enable SSH access to the instance. Once enabled, the SSH access information will be available under the instance details alongside your Splunk login credentials.
+* **SSH access** - <span class="label">Splunkers Only</span><span class="restriction-note"> (only available on some Some Enterprise based templates)</span> this option allows you to enable SSH access to the instance. Once enabled, the SSH access information will be available under the instance details alongside your Splunk login credentials.
 
 
-{{% notice info %}}
-**Considerations when enabling SSH access**
+{{% notice style="info" title="SSH Access Considerations" %}}
 
 * For security reasons SSH access for demo instances **requires a full tunnel VPN connection**. Split tunnels will not work for SSH.
 * Due to the VPN requirement SSH access is **not available to partners**.
@@ -114,15 +113,14 @@ Provides options to customise the running schedule for your instance(s). Options
 
 * **Lifetime** - the Time-to-Live (TTL) for your demo (minimum of 2 hours, maximum of 14 days.)
 
-  {{% notice info %}}
-  **Note:** If you select 'Training' for your use case you will be limited to a maximum lifetime of 1 day. If you need the demo to run for longer, enter a Salesforce activity for the use case.
+  {{% notice style="info" title="Training Use Cases" %}}
+  If you select 'Training' for your use case you will be limited to a maximum lifetime of 1 day. If you need the demo to run for longer, enter a Salesforce activity for the use case.
   {{% /notice %}}
 
 * **Operating hours** - <span class="restriction-note">(can only be changed on Splunk Enterprise based templates)</span> this allows you to create a custom schedule for the instance, selecting the days and time window you would like to have the instance available. Once selected, Splunk Show will automatically pause/restart the instance at the scheduled time.
   <img src="/splunk-show-docs/images/operating_hours.png" alt="my_page" style="width: 50%; height: auto; display: block; margin: 0;">
 
-  {{% notice info %}}
-  **Splunk Cloud based templates**  
+  {{% notice style="info" title="Splunk Cloud Based Templates" %}}
   Splunk Cloud instances must run 24/7 and their operating hours cannot be customized. This is noted within the Splunk Show UI.
   {{% /notice %}}
 
@@ -150,8 +148,7 @@ Splunk Show displays time in either 12 or 24 hour format, according to your OS a
 
 * **Shared demo** - select whether this demo will be shared with other Splunk Show users. Enabling this will make this demo visible to all Splunk Show users under the **Shared** demos section. (see [Shared Demos](/demos/shared-demos/)). If your demo has been linked to a Salesforce record and you toggle this Shared demo switch on, an advisory message will appear warning you that this is not recommended due to potential impact to customer activities. You can continue with sharing but at your own risk.
 
-{{% notice info %}}
-**Shared Demos**  
+{{% notice style="info" title="Shared Demos" %}}
 Shared demos are visible and accessible to all Splunk Show users. Their lifetime (TTL) can also be extended by anyone, though only the creator is able to stop them.
 {{% /notice %}}
 
@@ -159,7 +156,7 @@ Shared demos are visible and accessible to all Splunk Show users. Their lifetime
 
 ## Total Cost to Splunk
 
-{{% notice important %}}
+{{% notice style="important" title="Running Costs" %}}
 Running costs are displayed purely for informational purposes - there is no charge for running instances in Splunk Show.
 {{% /notice %}}
 

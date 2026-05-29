@@ -52,8 +52,8 @@ Click on a template tile (not the 'New…' button but the tile itself) to view i
 * **Last update** - the date when this template was last modified. Please see the [Splunk Show Release Notes](https://splunk.show/release-notes) *(Only accessible to Splunkers)* for detailed information about changes made to Show content.
 * **Version** - <span class="conditional-note">(only displayed in some templates)</span> the Splunk product version that this template leverages. 
 
-  {{% notice info %}}
-  **Note:** where a template includes more than one platform, for example both a Splunk Enterprise and a Splunk Cloud instance, the version numbers will be displayed under the _Group Resources_ section (see above) rather than under Additional Information.
+  {{% notice style="info" title="Note" %}}
+  Where a template includes more than one platform, for example both a Splunk Enterprise and a Splunk Cloud instance, the version numbers will be displayed under the _Group Resources_ section (see above) rather than under Additional Information.
   {{% /notice %}}
 
 **Enablement Materials** - a link to the relevant enablement materials for this template, including the demo script.  
@@ -61,8 +61,7 @@ If this button is linked to a Google Drive folder you will see a popup with a li
 
 **Submit Content Feedback** - send content improvement feedback directly to the content owner by clicking this button and filling out the form in the popup Send Feedback window.
 
-{{% notice warning %}}
-**Experiencing Technical Issues with a Show Instance?**  
+{{% notice style="warning" title="Experiencing Technical Issues?" %}}
 The Submit Content Feedback button should only be used for content improvement feedback.  
 If you are experiencing technical issues related to the running of a Splunk Show demo/workshop - such as instances not spinning up or data not appearing in a specific instance - please raise a support request (see [Support](/support/).)
 {{% /notice %}}

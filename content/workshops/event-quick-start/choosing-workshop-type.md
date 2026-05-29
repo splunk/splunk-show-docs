@@ -10,8 +10,8 @@ The following flowchart should help you choose the correct workshop type:
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">Workshop type decision flowchart</figcaption>
 </figure>
 
-{{% notice tip %}}
-Still not sure? Here's a quick guide:
+{{% notice style="tip" title="Still not sure?" %}}
+Here's a quick summary:
 - **Normal workshop**: You want full control and will manually manage instance distribution to attendees
 - **Private event**: You have a specific invite list and want controlled access
 - **Public event**: You want to allow open enrolments from anyone with a Splunk.com account (e.g. a public event)

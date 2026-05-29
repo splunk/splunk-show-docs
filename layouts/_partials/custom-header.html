@@ -1,4 +1,7 @@
 <style>
+  :root {
+    --fs-4xl: clamp(1.9rem, 3vw + 0.5rem, 2.6rem);
+  }
   .brand__logo {
     width: auto !important;
     max-width: none !important;
@@ -147,6 +150,9 @@
   .hero__inner {
     text-align: center;
     margin: 0 auto;
+  }
+  .hero__title {
+    font-size: clamp(2.25rem, 4vw + 0.5rem, 3rem);
   }
   .hero__title,
   .hero__lead {

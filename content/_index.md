@@ -24,9 +24,7 @@ Splunk Show is a platform to request demonstration instances across Splunk Cloud
 
 This documentation will walk you through the major steps in navigating the interface and some best practices when requesting instances.
 
-{{% notice info %}}
-**Click-through tutorial** <img src="/splunk-show-docs/images/click-through-icon.png" alt="" style="display: inline; height: 1.2em; width: auto; vertical-align: middle; margin-right: 0.3em;">
-
-Visit [splunk.show/tutorial](https://splunk.show/tutorial) to get a quick guided tour of the Splunk Show UI including navigating the UI, creating a demo, creating a workshop and more!
+{{% notice style="info" title="Click-through Tutorial" %}}
+<img src="/splunk-show-docs/images/click-through-icon.png" alt="" style="display: inline; height: 1.2em; width: auto; vertical-align: middle; margin-right: 0.3em;">Visit [splunk.show/tutorial](https://splunk.show/tutorial) to get a quick guided tour of the Splunk Show UI including navigating the UI, creating a demo, creating a workshop and more!
 
 {{% /notice %}}

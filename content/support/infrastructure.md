@@ -9,13 +9,11 @@ For issues using the platform, or if you have a technical issue with a demo or w
 - The [#splunk-show](https://splunk.slack.com/archives/C02EQU3B9HR) Slack channel <span class="badge-splunkers">Splunkers only</span>
 - The web chat feature in the bottom right corner of Splunk Show.
 
-{{% notice important %}}
-**Web Chat Support Hours**  
+{{% notice style="important" title="Web Chat Support Hours" %}}
 While you can post a message in the web chat at any time, the chat is currently only resourced during UK and US office hours (9am GMT - 6pm MST), so you may experience a delayed response.
 {{% /notice %}}
 
-{{% notice info %}}
-**Got an Issue with Demo/Workshop Content?**  
+{{% notice style="info" title="Got an Issue with Demo/Workshop Content?" %}}
 If you have a question or issue with demo/workshop content (e.g. "the demo script has incorrect screenshots" or "the slide deck has a mistake on it", etc.) please see [Content Feedback](/support/content-feedback/).
 {{% /notice %}}
 

@@ -28,13 +28,11 @@ The Catalog page provides a tabular view of all content that you have access to 
 * **More filters** - Provides an additional set of filters to help you further refine the results.
   <img src="/splunk-show-docs/images/catalog_more_filters.png" alt="my_page" style="width: 50%; height: auto; display: block; margin: 0;">
 
-{{% notice info %}}
-**Shared Demos**  
+{{% notice style="info" title="Shared Demos" %}}
 For more information on leveraging shared demos please see [Shared Demos](/demos/shared-demos/).
 {{% /notice %}}
 
-{{% notice info %}}
-**Always-On Demos**  
+{{% notice style="info" title="Always-On Demos" %}}
 For more information on using always on demos please see [Always-On Demos](/demos/always-on-demos/).
 {{% /notice %}}
 

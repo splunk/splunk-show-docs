@@ -16,8 +16,7 @@ Under **Account Settings** click on the **Salesforce** tab and click the **Conne
   </figcaption>
 </figure>
 
-{{% notice warning %}}
-**Salesforce Error?**  
+{{% notice style="warning" title="Salesforce Error?" %}}
 If you see an error message when connecting to Salesforce, this likely means you don't have the proper access rights for the Connected App. If you believe this is an error, please reach out to the Splunk Show team.
 {{% /notice %}}
 

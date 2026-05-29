@@ -9,8 +9,7 @@ Shared demos are on-demand demo instances that requestors have marked as "shared
 
 You can find shared demos on the **Catalog** page by filtering for 'Shared Demo'.
 
-{{% notice note %}}
-**Shared Demo Best Practices**  
+{{% notice style="warning" title="Shared Demo Best Practices" %}}
 As a best practice, **do not modify the content of shared demos**. Since any number of users may be leveraging the demo at any given time, it is best to keep it as standard as possible.
 
 If you need to customise the demo content for a customer, you should request a new instance (see [Creating Demos](/demos/creating-demos/).)

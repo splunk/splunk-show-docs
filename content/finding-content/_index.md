@@ -6,7 +6,7 @@ icon: "search"
 
 <!-- # Find a Demo or Workshop (New Instance / Select a Template Page) -->
 
-{{% notice tip %}}
+{{% notice style="tip" title="Quick Tip" %}}
 The easiest way to find content is via the [Catalog page](/catalog/). However, the steps below offer an alternative method of finding content from the homepage (My page).
 {{% /notice %}}
 

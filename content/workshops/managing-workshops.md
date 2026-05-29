@@ -18,11 +18,11 @@ When managing a workshop the same base options apply as when managing demo insta
   </figcaption>
 </figure>
 
-{{% notice info %}}
 ### Obtain a List of Instances for a Normal Workshop
 
 Since a workshop typically consists of multiple Splunk instances, you will need to access and distribute the connection details to workshop attendees. Download the list of instances by browsing to your workshop's management page and clicking on the **CSV** button under the **Resources** section.
 
+{{% notice style="info" title="CSV Exports" %}}
 **Note:** The workshop instances must be running for the CSV export option to be available. This is due to the backend IP addresses changing when instances are paused and resumed.
 {{% /notice %}}
 
@@ -40,8 +40,7 @@ Since a workshop typically consists of multiple Splunk instances, you will need 
   </figcaption>
 </figure>
 
-{{% notice tip %}}
-**Is Your Workshop an 'Event'?**  
+{{% notice style="tip" title="Is Your Workshop an Event?" %}}
 If you're running a workshop event, attendees will be able to access their own instance information directly in Show - you do not need to share their connection details manually (see [Events](/workshops/manage-events/).)
 {{% /notice %}}
 
@@ -95,9 +94,8 @@ Edit the quantity and click the green tick button to save the changes.
 
 ### Monitoring Workshop Instances
 
-{{% notice info %}}
-**Initial Feature Release - March 2025**  
-This feature is initially only available for the **Splunk4Rookies** workshop template while we test the feature and get feedback from users
+{{% notice style="info" title="Workshop Monitor Availability" %}}
+This feature is currently only available for the **Splunk4Rookies** workshop template
 {{% /notice %}}
 
 For templates that include a 'Splunk Show Workshop Monitor' instance, workshop/event managers will see an additional **Admin Resources** section on the workshop page, containing a single _Splunk Show Workshop Monitor_ instance. **Monitoring instances are only visible to managers and attendees do not see them.**

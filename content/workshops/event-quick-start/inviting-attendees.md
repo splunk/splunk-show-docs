@@ -51,13 +51,13 @@ Paste in a CSV list of the attendees' email addresses and click **SEND INVITES**
 
 Click on **Share with link** to copy the event link to your clipboard. You can now paste this link into an email or calendar invite.
 
-{{% notice note %}}
+{{% notice style="info" title="Event link format" %}}
 The event link is in the following format:  
 `https://splunk.show/<uniqueID>`
 
 You can customize the last part of the URL to tailor it to your event.
 {{% /notice %}}
 
-{{% notice tip %}}
+{{% notice style="tip" title="Link Sharing Tip" %}}
 Copy this link into the appropriate slide of your workshop slide deck to help attendees enrol before/during the workshop!
 {{% /notice %}}

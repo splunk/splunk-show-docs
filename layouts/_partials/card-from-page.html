@@ -36,7 +36,7 @@
   </div>
   {{ with $page.Description }}<p class="card__desc">{{ . }}</p>{{ end }}
   <div class="card__meta">
-    {{ if not $notime }}{{ with ($page.Params.time | default $page.Params.duration | default (printf "%d min" $page.ReadingTime)) }}<span class="card__meta-item">{{ . }}</span>{{ end }}{{ end }}
+    {{ if not $notime }}{{ with ($page.Params.time | default $page.Params.duration | default (printf "%d %s" $page.ReadingTime (cond (eq $page.ReadingTime 1) "minute" "minutes"))) }}<span class="card__meta-item">{{ . }}</span>{{ end }}{{ end }}
     {{ with $page.Params.difficulty }}<span class="card__meta-item">{{ . }}</span>{{ end }}
     {{- $count := partial "children-count.html" $page -}}
     {{ if gt $count 1 }}<span class="card__meta-item">{{ i18n "pagesCount" (dict "Count" $count) }}</span>{{ end }}

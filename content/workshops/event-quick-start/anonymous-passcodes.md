@@ -40,6 +40,6 @@ They will then be taken to the event page where they are automatically enrolled 
   </figcaption>
 </figure>
 
-{{% notice info %}}
+{{% notice style="info" title="Passcode Users" %}}
 Users enrolled via passcode remain anonymous - their enrolment doesn't require or capture any personal information.
 {{% /notice %}}

@@ -11,8 +11,7 @@ icon: "layout-dashboard"
 
 By default, you will land on your personal home page. This page presents an overview of your Show usage.
 
-{{% notice info %}}
-**Not seeing any of these tabs?**  
+{{% notice style="info" title="Not seeing any of these tabs?" %}}
 If you don't see any of these tabs this means you haven't yet been granted access to run demos or workshops. To request access:
 * **Splunkers:** Please complete [this request form](https://splunk.show/request)
 * **Partners:** Email us at [splunk-show@cisco.com](mailto:splunk-show@cisco.com)

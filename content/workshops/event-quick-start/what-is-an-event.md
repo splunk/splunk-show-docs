@@ -9,8 +9,8 @@ In Splunk Show you have three options for running a hands-on customer workshop:
 
 <span class=conditional-note>Attendees DO NOT need a splunk.com account.</span> A "traditional" workshop where you request a specific number of workshop instances up front. Once provisioned, instance details and access information must be [downloaded as a csv file](/workshops/managing-workshops/#obtain-a-list-of-instances-for-a-normal-workshop) for distribution to participants of the workshop. No record of participants is kept by Show (as there is no enrolment) - it's all down to you!
 
-{{% notice tip %}}
-**Ideal for:** "Old school" workshops where you're happy to manually manage instances and hand out credentials to participants.
+{{% notice style="tip" title="Ideal for:" %}}
+"Old school" workshops where you're happy to manually manage instances and hand out credentials to participants.
 {{% /notice %}}
 
 ## Private Event
@@ -21,8 +21,8 @@ A workshop that allows you to invite participants to an 'event' within Splunk Sh
 
 On the day of the event, instances will be spun up and participants can log in to Show (using their splunk.com account) to access their assigned instance information. 
 
-{{% notice tip %}}
-**Ideal for:** Workshops where you want to limit enrolments to only those who have the event link or who have been directly invited.
+{{% notice style="tip" title="Ideal for:" %}}
+Workshops where you want to limit enrolments to only those who have the event link or who have been directly invited.
 {{% /notice %}}
 
 ## Public Event
@@ -31,8 +31,8 @@ On the day of the event, instances will be spun up and participants can log in t
 
 Similar to private events but requires no invitation as anyone who logs in to Splunk Show (using a splunk.com account) can see and enrol in the workshop event. You will also get a CSV list of enrolled users at the end of the workshop.
 
-{{% notice tip %}}
-**Ideal for:** Public workshops/events where you want to allow open enrolments.
+{{% notice style="tip" title="Ideal for:" %}}
+Public workshops/events where you want to allow open enrolments.
 {{% /notice %}}
 
 ## Comparison Table

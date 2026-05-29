@@ -23,7 +23,6 @@ On the popup **Send Feedback** window, enter your content feedback and click on 
   </figcaption>
 </figure>
 
-{{% notice note %}}
-**Got a Technical Issue with a Running Instance?**  
+{{% notice style="info" title="Got a Technical Issue with a Running Instance?" %}}
 Technical issues related to the running of your demo/workshop - such as instances not spinning up or data not appearing in a specific instance - should be raised as a support request (see [Infrastructure Issues](/support/infrastructure/).)
 {{% /notice %}}
