@@ -5,7 +5,7 @@ icon: "globe"
 ---
 
 <!-- # Public Page -->
-<img src="/splunk-show-docs/images/public_page_banner.png" alt="my_page" style="max-width: 80%; height: auto; display: block; margin: 0 0 1rem 0; clear: both;">
+<img src="/splunk-show-docs/images/public_page_banner.png" alt="my_page" style="max-width: 45%; height: auto; display: block; margin: 0 0 1rem 0; clear: both;">
 
 This page provides the default public view for all customers who log in to Splunk Show.
 

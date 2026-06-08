@@ -5,7 +5,7 @@ icon: "library"
 ---
 
 <!--# Catalog Page -->
-<img src="/splunk-show-docs/images/catalog_page.png" alt="my_page" style="width: 40%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/catalog_page.png" alt="my_page" style="width: 45%; height: auto; display: block; margin: 0;">
 
 The Catalog page provides a tabular view of all content that you have access to in Splunk Show.
 

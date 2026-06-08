@@ -7,7 +7,7 @@ icon: "layout-dashboard"
 <!-- # My Page -->
 
 <!-- <img src="/splunk-show-docs/images/my_page.png" alt="my_page" style="max-width: 40%; height: auto; display: block; margin: 0 0 1rem 0; clear: both;"> -->
-<img src="/splunk-show-docs/images/my_page.png" alt="My Page" style="width: 40%; height: auto; display: block; margin: 0;">
+<img src="/splunk-show-docs/images/my_page.png" alt="My Page" style="width: 45%; height: auto; display: block; margin: 0;">
 
 By default, you will land on your personal home page. This page presents an overview of your Show usage.
 
@@ -17,12 +17,16 @@ If you don't see any of these tabs this means you haven't yet been granted acces
 * **Partners:** Email us at [splunk-show@cisco.com](mailto:splunk-show@cisco.com)
 {{% /notice %}}
 
-* **Search bar** - use this to search for any content in Splunk Show. Results will include both demo/workshop templates as well as past and current instances you have requested.
+* **Search bar** - use this to search for any content in Splunk Show. Results will include both demo/workshop templates as well as current stacks you have requested. Use the 'Show past stacks' toggle to optionally include past (i.e. Stopped) stacks in the results.
   
-  <img src="/splunk-show-docs/images/search.png" alt="Example of searching using the search bar" style="max-width: 100%; height: auto; display: block; margin: 0 0 1rem 0; clear: both;">
+  <img src="/splunk-show-docs/images/my_page_search.png" alt="Example of searching using the search bar" style="max-width: 100%; height: auto; display: block; margin: 0 0 1rem 0; clear: both;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     Example of searching using the search bar
   </figcaption>
+
+{{% notice style="info" title="Show Past Stacks" %}}
+This option is helpful for finding a previous workshop you ran so you can [export the list of event participants](/workshops/manage-events).
+{{% /notice %}}
 
 * **+ New Instance** button - takes you to the **Select a template** page to browse all Show demo/workshop templates
 * **Overview** - includes key statistics about your Splunk Show usage

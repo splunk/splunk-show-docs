@@ -14,21 +14,18 @@ Click on a template tile (not the 'New…' button but the tile itself) to view i
   </figcaption>
 </figure>
 
-**Product area** - the product area that this template most closely maps to, i.e. security, observability or platform.  
-**Platform** - whether this template leverages Splunk Cloud ("Cloud"), Splunk Enterprise ("Enterprise") or a mixture of environments, including SCS and SOAR ("Hybrid").  
-**Minutes to be ready** - an approximate time that this template will take to provision. This value is based on recent provisioning metrics and so can vary over time depending on the load being placed on the Splunk Show backend services.  
-**Description** - a general description of the template including any important information you need to know about this demo, such as additional configuration required, etc.  
-**Instructions** - <span class="conditional-note">(only displayed in some templates)</span> outlines any additional instructions that you should know about this template, such as how long data backfill takes to complete before your demo is fully ready to use.
+**Product area** - the product area that this template most closely maps to, i.e. security, observability or platform.
 
-<figure style="max-width: 80%; margin: 0 0 1rem 0;">
-  <img src="/splunk-show-docs/images/instructions.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
-  <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
-    Example of additional instructions included in a demo template. Note: Not all templates include this section
-  </figcaption>
-</figure>
+**Environment type** - whether this template leverages Splunk Cloud ("Cloud"), Splunk Enterprise ("Enterprise") or a mixture of environments, including SCS and SOAR ("Hybrid").
 
-**Installed apps** - <span class="conditional-note">(only displayed for Cloud-based templates)</span> displays the Splunk apps installed in this template during the provisioning process.  
-**Sourcetypes** - <span class="conditional-note">(only displayed for single instance templates)</span> displays the source types included in this template.  
+**Est. delivery time** - an approximate time that this template will take to provision. This value is based on recent provisioning metrics and so can vary over time depending on the load being placed on the Splunk Show backend services.
+
+**Description** - a general description of the template including any important information you need to know about this demo, such as additional configuration required, etc.
+
+**Instructions** - if present, this section outlines any additional instructions that you should know about this template, such as how long data backfill takes to complete before your demo is fully ready to use.
+
+**Additional Resources** - Links to other resources related to this content, such as click-throughs, blog posts or external websites.
+
 **Datagen Source** - <span class="conditional-note">(only displayed in templates where a Datapet feed is used)</span> displays the demo data sets included in this template. Note that 'friendly' names are used here, e.g. "InfoSec Data" and specific source type names are displayed under the 'Sourcetypes' section (see above).  
 **Grouped Resources** - <span class="conditional-note">(only displayed in some templates)</span> where a template includes more than one platform type, this section is included to indicate the platforms included and the versions for each.
 
@@ -55,6 +52,24 @@ Click on a template tile (not the 'New…' button but the tile itself) to view i
   {{% notice style="info" title="Note" %}}
   Where a template includes more than one platform, for example both a Splunk Enterprise and a Splunk Cloud instance, the version numbers will be displayed under the _Group Resources_ section (see above) rather than under Additional Information.
   {{% /notice %}}
+
+**Sourcetypes** - <span class="conditional-note">(only displayed for single instance templates)</span> displays the indexed source types included in this template. Clicking on the link will present a popup modal where you can search through the full list of source types.
+
+<figure style="max-width: 40%; margin: 0 0 1rem 0;">
+  <img src="/splunk-show-docs/images/sourcetypes_modal.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
+    Example of viewing template source types
+  </figcaption>
+</figure>
+
+**Installed apps** - <span class="conditional-note">(only displayed for Cloud-based templates)</span> displays the Splunk apps installed in this template. Clicking on the link will present a popup modal where you can search through the full list of installed apps.
+
+<figure style="max-width: 40%; margin: 0 0 1rem 0;">
+  <img src="/splunk-show-docs/images/installedapps_modal.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
+    Example of viewing a template's installed apps
+  </figcaption>
+</figure>
 
 **Enablement Materials** - a link to the relevant enablement materials for this template, including the demo script.  
 If this button is linked to a Google Drive folder you will see a popup with a list of all available files to download.
