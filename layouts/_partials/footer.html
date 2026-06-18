@@ -270,11 +270,14 @@
 .qe-rv-yours{color:#E53935}
 .qe-rv-ok{color:#4CAF50}
 .qe-rv-icon{float:right}
+.qe-learn-more{color:var(--color-accent-text,#FF7DBA);text-decoration:underline;font-weight:600;white-space:nowrap}
+.qe-learn-more:hover{color:var(--color-accent-text-hover,#ff5fa5)}
 @media(max-width:480px){#quiz-egg-modal{max-height:95vh;border-radius:12px}#quiz-egg-minibar{width:100%;border-left:none;border-top-right-radius:0}}
 </style>
 
 <script>
 (function(){
+var QE_BASE="{{ (urls.Parse site.BaseURL).Path | strings.TrimSuffix "/" }}";
 var QE={
  Q:[
   {c:"Signing In",q:"What URL do you navigate to in order to access Splunk Show?",o:["https://demo.splunk.com","https://show.splunk.com","https://splunk.show/login","https://myshow.splunk.com"],a:1,e:"The access URL is <strong>https://show.splunk.com</strong>."},
@@ -319,6 +322,8 @@ var QE={
   {c:"Platform",q:"What Salesforce record types can Splunkers search for when associating a demo?",o:["Account, Opportunity, Campaign, and SESR/INH","Account and Opportunity only","Account, Opportunity, and Lead","Any CRM record type"],a:0,e:"Splunkers can search for <strong>Account, Opportunity, Campaign, and SESR/INH</strong> records."}
  ],
  sel:[],idx:0,score:0,log:[],L:['A','B','C','D'],
+ goLearn:function(path){this.minimise();window.location.href=QE_BASE+path;},
+ CAT_URL:{'Signing In':'/signing-in/','My Page':'/my-page/','Catalog':'/catalog/','Finding Content':'/finding-content/','Creating Demos':'/demos/creating-demos/','Managing Demos':'/demos/managing-demos/','Shared & Static':'/demos/shared-demos/','Workshops':'/workshops/creating-workshops/','Account Settings':'/account-settings/','Platform':'/'},
  SK:'qe_state',
  /* ── sessionStorage helpers ── */
  save:function(view){
@@ -425,7 +430,8 @@ var QE={
    });
    var fb=document.getElementById('qe-fb');
    fb.className='qe-fb show '+(prev.ok?'ok':'ko');
-   fb.innerHTML=prev.ok?'&#x2705; <strong>Correct!</strong> '+prev.e:'&#x274C; <strong>Not quite.</strong> The correct answer was <strong>'+q.o[prev.correct]+'</strong>. '+prev.e;
+   var prevUrl=self.CAT_URL[q.c];
+   fb.innerHTML=prev.ok?'&#x2705; <strong>Correct!</strong> '+prev.e:'&#x274C; <strong>Not quite.</strong> '+prev.e+(prevUrl?' <a href="'+QE_BASE+prevUrl+'" data-path="'+prevUrl+'" class="qe-learn-more">(learn more)</a>':'');
    var nb=document.getElementById('qe-nxt');nb.style.display='';
    nb.textContent=this.idx+1<this.sel.length?'Next \u2192':'See Results \u2192';
   }else{
@@ -445,7 +451,8 @@ var QE={
   });
   var fb=document.getElementById('qe-fb');
   fb.className='qe-fb show '+(ok?'ok':'ko');
-  fb.innerHTML=ok?'&#x2705; <strong>Correct!</strong> '+q.e:'&#x274C; <strong>Not quite.</strong> The correct answer was <strong>'+q.o[q.a]+'</strong>. '+q.e;
+  var learnUrl=this.CAT_URL[q.c];
+  fb.innerHTML=ok?'&#x2705; <strong>Correct!</strong> '+q.e:'&#x274C; <strong>Not quite.</strong> '+q.e+(learnUrl?' <a href="'+QE_BASE+learnUrl+'" data-path="'+learnUrl+'" class="qe-learn-more">(learn more)</a>':'');
   document.getElementById('qe-sc').textContent=this.score;
   document.getElementById('qe-an').textContent=this.idx+1;
   var nb=document.getElementById('qe-nxt');nb.style.display='';
@@ -510,6 +517,7 @@ var QE={
  }
 };
 document.getElementById('quiz-egg-overlay').addEventListener('click',function(e){if(e.target===this)QE.minimise();});
+document.getElementById('quiz-egg-body').addEventListener('click',function(e){var a=e.target.closest('.qe-learn-more');if(a&&a.dataset.path){e.preventDefault();QE.goLearn(a.dataset.path);}});
 window.quizEgg=QE;
 QE.init();
 })();
