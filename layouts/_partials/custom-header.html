@@ -76,6 +76,31 @@
   [data-theme="dark"] .sidebar-resources__note {
     color: rgba(230, 230, 230, 0.8);
   }
+  .sidebar-resources__quiz-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: var(--color-accent-text, #FF7DBA);
+    font-size: var(--fs-sm);
+    font-weight: 400;
+    cursor: pointer;
+    font-family: var(--font-body, inherit);
+    text-decoration: none;
+  }
+  .sidebar-resources__quiz-btn svg {
+    width: 0.9rem;
+    height: 0.9rem;
+    flex-shrink: 0;
+  }
+  .sidebar-resources__quiz-btn:hover {
+    color: var(--color-accent-text-hover, #ff5fa5);
+  }
+  :root:not([data-theme="dark"]) .sidebar-resources__quiz-btn {
+    color: var(--color-accent-text, #BD0D5F);
+  }
   .card__header {
     display: flex;
     align-items: center;
