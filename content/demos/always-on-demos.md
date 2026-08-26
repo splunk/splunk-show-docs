@@ -16,7 +16,7 @@ Always on (formerly "static") demo instances are environments that are always ru
 
 {{% notice style="info" title="User Permissions for Always On Demos" %}}
 Since always on demos are shared environments, user permissions are typically restricted to prevent accidental changes that could impact other users. If you need to make changes or customise a demo in any way you should leverage an on-demand demo (see [Creating Demos](/demos/creating-demos/).)
-{{% /notice %}}
+{{% /notice %}} 
 
 To access an always on demo, either expand the demo using the arrow and click on "Use Instance" or simply click on the demo name. 
 
