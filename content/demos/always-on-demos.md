@@ -20,8 +20,8 @@ Since always on demos are shared environments, user permissions are typically re
 
 To access an always on demo, either expand the demo using the arrow and click on "Use Instance" or simply click on the demo name. 
 
-<figure style="max-width: 100%; margin: 0 0 1rem 0;">
-  <img src="/splunk-show-docs/images/use_instance.png" alt="Click on Use Instance" style="width: 70%; height: auto; display: block; margin: 0;">
+<figure style="width: 80%; margin: 0 0 1rem 0;">
+  <img src="/splunk-show-docs/images/use_instance.png" alt="Click on Use Instance" style="width: 100%; height: auto; display: block;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     Click on the Use Instance button or simply click on the name of the demo itself
   </figcaption>
@@ -29,8 +29,8 @@ To access an always on demo, either expand the demo using the arrow and click on
 
 You will need to add at least one activity before the connection details become available to you. Click on either **Add activity** or **+ New activity** at the bottom of the page to add an activity and reveal the connection information (see [Creating Demos](/demos/creating-demos/#use-case) for information on the activity types.)
 
-<figure style="max-width: 100%; margin: 0 0 1rem 0;">
-  <img src="/splunk-show-docs/images/add_activity_template_page.png" alt="Click the Add Activity button to use an always on demo" style="width: 70%; height: auto; display: block; margin: 0;">
+<figure style="max-width: 80%; margin: 0 0 1rem 0;">
+  <img src="/splunk-show-docs/images/add_activity_template_page.png" alt="Click the Add Activity button to use an always on demo" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
     "Click the Add Activity button to use an always on demo
   </figcaption>
