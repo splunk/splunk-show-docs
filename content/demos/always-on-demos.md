@@ -5,7 +5,7 @@ weight: 30
 
 <!-- # Always On (Static) Demos -->
 
-Always on (formerly "static") demo instances are environments that are always running and can be accessed immediately. You can view the list of always on demos from the **Catalog** page by navigating to the "Request" dropdown and selecting "Always On" demos.
+Always on (formerly referred to as "static") demo instances are environments that are always running and can be accessed immediately. You can view the list of always on demos from the **Catalog** page by navigating to the "Request" dropdown and selecting "Always On" demos.
 
 <figure style="max-width: 100%; margin: 0 0 1rem 0;">
   <img src="/splunk-show-docs/images/always_on_demos.png" alt="Use the Request filter to view only always on demos" style="width: 100%; height: auto; display: block; margin: 0;">
