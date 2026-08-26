@@ -30,9 +30,9 @@ To access an always on demo, either expand the demo using the arrow and click on
 You will need to add at least one activity before the connection details become available to you. Click on either **Add activity** or **+ New activity** at the bottom of the page to add an activity and reveal the connection information (see [Creating Demos](/demos/creating-demos/#use-case) for information on the activity types.)
 
 <figure style="max-width: 100%; margin: 0 0 1rem 0;">
-  <img src="/splunk-show-docs/images/add_activity_template_page.png" alt="Click the Add Activity button to use a shared demo" style="width: 70%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/add_activity_template_page.png" alt="Click the Add Activity button to use an always on demo" style="width: 70%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
-    "Click the Add Activity button to use a shared demo
+    "Click the Add Activity button to use an always on demo
   </figcaption>
 </figure>
 
