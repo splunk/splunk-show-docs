@@ -16,7 +16,7 @@ The Catalog page provides a tabular view of all content that you have access to 
 <figure style="max-width: 80%; margin: 0 0 1rem 0;">
 </figure>
 
-* **Type** dropdown - Filter by type of content, such as demos or workshops
+* **Type** dropdown - Filter by type of content, such as demos, workshops, POVs (Splunkers only) or click-throughs
   <img src="/splunk-show-docs/images/type_dropdown.png" alt="my_page" style="width: 20%; height: auto; display: block; margin: 0;">
 
 * **Request** dropdown - Filter by the type of request, such as on-demand demos, always on demos (formerly called "static demos") or shared demos.
@@ -27,6 +27,10 @@ The Catalog page provides a tabular view of all content that you have access to 
 
 * **More filters** - Provides an additional set of filters to help you further refine the results.
   <img src="/splunk-show-docs/images/catalog_more_filters.png" alt="my_page" style="width: 50%; height: auto; display: block; margin: 0;">
+
+{{% notice style="info" title="Proof of Value (POV) Workshops" %}}
+<span class="badge-splunkers">Splunkers only</span> For more information on POVs, please see [POV FAQ](https://splunk.show/pov-faq).
+{{% /notice %}}
 
 {{% notice style="info" title="Shared Demos" %}}
 For more information on leveraging shared demos please see [Shared Demos](/demos/shared-demos/).

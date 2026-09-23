@@ -100,7 +100,7 @@ The reason for the workshop, which has the following options (Please expand the 
 
 * **DNS Prefix** - a customisable label that will be included in the DNS records and instance URLs for this workshop. This helps organize the instance URLs once provisioned. For example, entering `abc` as the prefix will result in instance URLs that looks like this:  
   `https://abc-i-08115630654cebf93.splunk.show`
-* **SSH Access** - (only available on some Some Enterprise based templates) Uncommon for workshops but is required in a select few where SSH access is part of the exercises and has also been authorized by the workshop owner. Where SSH is required for the workshop it will be enabled, otherwise this option will typically be disabled and unavailable for workshops.
+* **SSH Access** - (only available on some Enterprise based templates) Uncommon for workshops but is required in a select few where SSH access is part of the exercises and has also been authorized by the workshop owner. Where SSH is required for the workshop it will be enabled, otherwise this option will typically be disabled and unavailable for workshops.
 
 ## Runtime
 
