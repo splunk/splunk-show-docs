@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Hugo: local preview server",
+      "type": "shell",
+      "command": "hugo server -D --baseURL http://localhost:1313/splunk-show-docs/",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "detail": "Runs the Hugo dev server so Front Matter CMS can render live previews. Serves at http://localhost:1313/splunk-show-docs/ so the baseURL-prefixed image paths resolve."
+    }
+  ]
+}
