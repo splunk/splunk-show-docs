@@ -85,3 +85,14 @@ Scroll to the **Schedule** section near the top of the workshop page and click o
 Click on **Submit** to save your changes.
 
 <img src="/splunk-show-docs/images/event_schedule_modal.png" alt="my_page" style="width: 60%; height: auto; display: block; margin: 0;">
+
+## Viewing Event Metadata
+
+On your workshop page click on the **Resources** tab. Here you will see metadata about your event, including the stack ID, Start and end dates, and links to enablement materials.
+
+<figure style="max-width: 80%; margin: 0 0 1rem 0;">
+  <img src="/splunk-show-docs/images/event_resources.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
+    Event with custom thumbnail
+  </figcaption>
+</figure>

@@ -60,12 +60,36 @@ On your workshop page click on the **Participants** tab. Here you will see enrol
   </figcaption>
 </figure>
 
-Expand a user row to manage that user's instances, including assigning them a new instance if needed (users can also unenroll and re-enroll to get new instances assigned by Show.) If you need to view a user instance's connection information (e.g. URL, username, password, etc.) simply click on the instance name to navigate to that page.
+Expand a user row to manage that user's instances, including assigning them a new instance if needed (users can also unenroll and re-enroll to get new instances assigned by Show.) 
+
+### View a Participant's Connection Information
+
+If you need to view connection information for a user's instance (e.g. URL, username, password, etc.) simply click on the instance name to navigate to that page.
 
 <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-  <img src="/splunk-show-docs/images/event_participant_expanded.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/event_participants_instance_link.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
-    Manage a user's instances via the Participants tab
+    Example of a participant assigned to an instance
+  </figcaption>
+</figure>
+
+### Assign a New Instance to a Participant
+
+If a participant experiences an issue with their assigned instance you can assign them to another instance by clicking on the **Assign new instance** link.
+
+<figure style="max-width: 80%; margin: 0 0 1rem 0;">
+  <img src="/splunk-show-docs/images/event_participants_assign_new_instance.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
+    You can move users to another instance when needed
+  </figcaption>
+</figure>
+
+Select from the available instances and click **MOVE**.
+
+<figure style="max-width: 40%; margin: 0 0 1rem 0;">
+  <img src="/splunk-show-docs/images/move_participant_new_instance.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
+    You can move users to another instance when needed
   </figcaption>
 </figure>
 

@@ -14,49 +14,53 @@ On your workshop page click on the **My Instances** tab. Here you will see conne
   </figcaption>
 </figure>
 
-The **Resources** section of the event page allows you to manage the instances that were provisioned as part of your event.
+## View All Instances
 
-Click on **Manage instances** to see a list of instances.
+On your workshop page click on the **All Instances** tab. Here you will see a list of all workshop instances along with their current status (RUNNING, PENDING, etc.)
 
-<img src="/splunk-show-docs/images/resources_manage.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
-
-Click on **Go to instance** to access the instance.
-
-<img src="/splunk-show-docs/images/manage_instances_details.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
-
-**Instance name** - click on an instance name to view instance specific information including the connection information, utilization metrics and who (if anyone) is assigned to it.
-
-<figure style="max-width: 100%; margin: 0 0 1rem 0;">
-  <img src="/splunk-show-docs/images/connection_info_event.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+<figure style="max-width: 80%; margin: 0 0 1rem 0;">
+  <img src="/splunk-show-docs/images/event_all_instances.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
-    Click on the Instance name to view detailed information about an individual instance
+    You can find a full list of workshop instances under the All Instances tab
   </figcaption>
 </figure>
 
-{{% notice style="info" title="When Are Instances Assigned to Users?" %}}
-When a user enrols in a workshop Show will assign them an instance (provided the instances are running.)
+Expand a row to view more information about that workshop instance, including connection information and assigned participants.
+
+- **Available** - This toggle controls whether or not the instance is available for Show to assign to users when they enrol in the event. If an instance has an issue for some reason, you can toggle this off and Show will ignore it and not allocate it to any other users during the workshop.
+- **Stop** - Use this to manually stop (terminate) a running workshop instance.
+
+{{% notice style="info" title="Stopping Instances" %}}
+Note that stopped instances are automatically terminated by Show. When an instance is stopped it cannot be started again.
 {{% /notice %}}
 
-Click on the **Instance participants** tab to see who is assigned to that instance. Note that for some workshops you will have more than one user per instance.
-
 <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-  <img src="/splunk-show-docs/images/instance_participants.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/event_instance_controls.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
-    Example of a participant assigned to an instance
+    Use the controls to manage a running instance
   </figcaption>
 </figure>
 
-### Move Participants to Another Instance
-
-If a participant experiences an issue with their assigned instance you can assign them to another instance by selecting them from the **Instance participants** list and clicking on the **Assign another instance to user** button.
+With an instance row expanded, click on the **Participants** tab to view which user(s) Show has assigned to this instance.
 
 <figure style="max-width: 80%; margin: 0 0 1rem 0;">
-  <img src="/splunk-show-docs/images/participant_move_instance.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <img src="/splunk-show-docs/images/event_instance_participant.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
   <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
-    You can move users to another instance when needed
+    Example of an anonymous passcode user being assigned to a workshop instance
   </figcaption>
 </figure>
 
-On the **Move participants to another instance** popup, select an available instance and click on **MOVE** to reassign the participant(s) to that instance.
+## Moving a Participant to a New Instance
 
-<img src="/splunk-show-docs/images/move_participant.png" alt="my_page" style="width: 40%; height: auto; display: block; margin: 0;">
+On your workshop page click on the **All Instances** tab. Here you will see a list of all workshop instances along with their current status (RUNNING, PENDING, etc.)
+
+<figure style="max-width: 80%; margin: 0 0 1rem 0;">
+  <img src="/splunk-show-docs/images/event_all_instances.png" alt="my_page" style="width: 100%; height: auto; display: block; margin: 0;">
+  <figcaption style="text-align: center; font-size: 0.9em; color: var(--MENU-SECTIONS-LINK-color); margin-top: 0.5rem; font-style: italic;">
+    You can find a full list of workshop instances under the All Instances tab
+  </figcaption>
+</figure>
+
+## Assign a New Instance to a Participant
+
+See [Assign a New Instance to a Participant](/workshops/manage-events/participants/#assign-a-new-instance-to-a-participant).
