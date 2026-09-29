@@ -88,7 +88,7 @@ If you intend on just sharing the instance details with your participants via a 
 
 #### Allow Anonymous Enrolment via Passcode
 
-<span class=conditional-note>(Applies to events only)</span> [Enable this option](/workshops/manage-events/#managing-anonymous-enrolment-via-passcode) to allow attendees to enrol in your event anonymously using a Show-generated passcode, rather than a splunk.com account. 
+<span class=conditional-note>(Applies to events only)</span> [Enable this option](/workshops/manage-events/participants/#managing-anonymous-enrolment-via-passcode) to allow attendees to enrol in your event anonymously using a Show-generated passcode, rather than a splunk.com account. 
 
 ### 3. Review and Create
 

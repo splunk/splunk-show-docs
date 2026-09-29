@@ -258,7 +258,7 @@ This section allows you select what type of workshop you want to run. The follow
     </figure>
   </div>
 
-* **Allow Anonymous Enrollment via Passcode** - <span class="conditional-note">(applies to events only)</span> enable this option to allow attendees to enrol in your event anonymously using a Show-generated passcode, rather than a Splunk.com account. See [Managing Anonymous Enrolment via Passcode](/workshops/manage-events/#managing-anonymous-enrolment-via-passcode) for more information on this feature.
+* **Allow Anonymous Enrollment via Passcode** - <span class="conditional-note">(applies to events only)</span> enable this option to allow attendees to enrol in your event anonymously using a Show-generated passcode, rather than a Splunk.com account. See [Managing Anonymous Enrolment via Passcode](/workshops/manage-events/participants/#managing-anonymous-enrolment-via-passcode) for more information on this feature.
 
 ## Review
 <figure style="max-width: 100%; margin: 0 0 1rem 0;">
