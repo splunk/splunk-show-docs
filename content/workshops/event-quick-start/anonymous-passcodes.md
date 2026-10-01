@@ -1,13 +1,17 @@
----
-title: "Using Passcodes for Anonymous Enrolments"
-weight: 50
----
++++
+title = "Using Passcodes for Anonymous Enrolments"
+weight = 50
++++
 
 Enabling this option will provide you with unique passcode for you event, which you can then copy and share with any users who do not have a Splunk.com account and are not able to sign up for one. Passcodes are unique for each event and expire at the end of the event. Your event can also have a mixture of Splunk.com enrolled users and passcode enrolled users.
 
 ## How Passcode Enrolment Works
 
-### Step 1: User visits the event link
+### Step 1: Enable Passcode Authentication for Your Workshop
+
+First, enable passcode authentication for your event by following the instructions here: [Managing Anonymous Enrolment via Passcode](/workshops/manage-events/participants/#managing-anonymous-enrolment-via-passcode).
+
+### Step 2: User visits the event link
 
 When a user is given a passcode they will visit the usual event link and this will take them to the usual sign in page.
 
@@ -18,7 +22,7 @@ When a user is given a passcode they will visit the usual event link and this wi
   </figcaption>
 </figure>
 
-### Step 2: User enters passcode
+### Step 3: User enters passcode
 
 From the sign in page, they will click on **Enter a passcode instead** and enter/paste the passcode.
 
@@ -29,7 +33,7 @@ From the sign in page, they will click on **Enter a passcode instead** and enter
   </figcaption>
 </figure>
 
-### Step 3: User is enrolled
+### Step 4: User is enrolled
 
 They will then be taken to the event page where they are automatically enrolled and will see their instance information once the event starts.
 
@@ -40,6 +44,6 @@ They will then be taken to the event page where they are automatically enrolled 
   </figcaption>
 </figure>
 
-{{% notice style="info" title="Passcode Users" %}}
+{{% notice info %}}
 Users enrolled via passcode remain anonymous - their enrolment doesn't require or capture any personal information.
 {{% /notice %}}
