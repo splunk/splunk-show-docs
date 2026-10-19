@@ -131,9 +131,8 @@
   </script>
 {{ end }}
 
-{{- /* ── Easter-egg Quiz FAB ───────────────────────────────────────────── */}}
-<button id="quiz-egg-fab" aria-label="Open Splunk Show Quiz" title="Think you know Splunk Show? 🧠" onclick="quizEgg.open()">?</button>
-
+{{- /* ── Quiz launcher lives in the sidebar resources list (quizEgg.open());
+       no standalone FAB is rendered here. ─────────────────────────────── */}}
 <div id="quiz-egg-minibar" aria-hidden="true">
   <span id="quiz-egg-minibar-lbl">📝 Test Your Knowledge!</span>
   <div style="display:flex;gap:8px;align-items:center">
@@ -207,8 +206,6 @@
 
 <style>
 /* Quiz egg — inherits site CSS variables so it adapts to light/dark theme automatically */
-#quiz-egg-fab{background:transparent;color:var(--color-ink-muted,#aaa);border:1px solid transparent;border-radius:6px;padding:4px 10px;font-size:.78rem;font-weight:600;cursor:pointer;font-family:var(--font-body,inherit);transition:all .15s;white-space:nowrap;display:inline-flex;align-items:center;gap:5px}
-#quiz-egg-fab:hover{color:var(--color-accent-text,#FF7DBA);border-color:var(--color-accent-text,#FF7DBA);background:color-mix(in oklab,var(--color-accent-text,#FF7DBA) 8%,transparent)}
 #quiz-egg-minibar{position:fixed;bottom:0;right:0;width:340px;background:var(--color-surface,#f4f4f4);border-top:2px solid var(--color-accent,#FF007F);border-left:1px solid var(--color-border,#ccc);border-top-left-radius:10px;padding:10px 14px;display:none;align-items:center;justify-content:space-between;z-index:9001;box-shadow:-2px -2px 20px color-mix(in oklab,var(--color-ink,#000) 12%,transparent);gap:8px}
 #quiz-egg-minibar.show{display:flex}
 #quiz-egg-minibar-lbl{color:var(--color-ink,#111);font-size:.88rem;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;min-width:0;font-family:var(--font-body,inherit)}
