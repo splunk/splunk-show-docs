@@ -11,7 +11,7 @@ Starting October 12, create all new POVs, demos, and workshops after signing in 
 | Date           | What changes                                                        | What you should do                                                                                                                                                        |
 | -------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **October 12** | Cisco sign-in becomes available alongside the existing Okta option. | Use **Sign in with Cisco** for every new POV, demo, and workshop. Use **Sign in with Splunk (Okta)** to access existing work created under that identity.                 |
-| **November 2** | The Okta sign-in option is removed from Show.                       | Before this date, review any POVs, demos, or workshops that you still need under your Okta identity. Follow the Show team's guidance for active work before the deadline. |
+| **November 9** | The Okta sign-in option is removed from Show.                       | Before this date, review any POVs, demos, or workshops that you still need under your Okta identity. Follow the Show team's guidance for active work before the deadline. |
 
 **Which Sign In Should I Use?**
 
@@ -22,5 +22,5 @@ Starting October 12, create all new POVs, demos, and workshops after signing in 
 See the [signing in instructions](https://splunk.github.io/splunk-show-docs/signing-in/) for more information.
 
 {{% notice style="info" title="Note About Account Changes" %}}
-If you have active work under Okta, do not assume that it will move to your Cisco identity. The Show team will provide specific instructions for active work before Okta sign-in is removed on November 2. Contact the Show team if you cannot find a resource or need help with the transition.
+If you have active work under Okta, do not assume that it will move to your Cisco identity. The Show team will provide specific instructions for active work before Okta sign-in is removed on November 9th. Contact the Show team if you cannot find a resource or need help with the transition.
 {{% /notice %}}
