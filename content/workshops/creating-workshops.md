@@ -213,6 +213,26 @@ This section allows you select what type of workshop you want to run. The follow
   * **Future** - your instance(s) will be provisioned at the date and time specified.
 * **Event Start** - (applies to events only) the date/time when enrolled participants will be allowed to access the event. After the Event Start date/time, participants will be able to see the access details for their assigned workshop instance.
 
+The following timeline shows how these times relate: instances run from the Provisioning Start for the full Lifetime (TTL), and the event ends at **Provisioning Start + TTL**. Enrolled users can access their instance from the Event Start until the end of the TTL period.
+
+```text
+           Provisioning Start                Event Start                    Termination Time                    Event End
+                                                                                                       (Provisioning Start + TTL)
+TIMELINE   ─────────┬─────────────────────────────┬─────────────────────────────────┬───────────────────────────────┬─────────────▶
+                    │                             │                                 │                               │
+SETTINGS            │                             │                                 │                        Lifetime (TTL)
+(you set)     Provisioning                   Event Start                       Termination                  = sets Event End
+                  Start                                                           Time
+                    │                             │                                 │                               │
+INSTANCES           [███████████████████████████████████████████████████████████████████████████████████████████████]
+RUNNING     instances spin up                                        unassigned instances terminated         all terminated
+                                                  │                                                                 │
+USER                                              [█████████████████████████████████████████████████████████████████]
+ACCESS                                                              users can access their instance            access ends
+
+Event end time = Provisioning Start + TTL (Lifetime)
+```
+
   {{% notice style="info" title="Time Formats" %}}
   Splunk Show displays time in either 12 or 24 hour format, according to your OS and browser settings. If you wish to change from one format to another please adjust these settings in your OS/browser.
   {{% /notice %}}
