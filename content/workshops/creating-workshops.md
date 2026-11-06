@@ -217,20 +217,20 @@ The following timeline shows how these times relate: instances run from the Prov
 
 #### Provisioning Timelines
 
-```text
+```Timeline
            Provisioning Start                Event Start                    Termination Time                    Event End
                                                                                                        (Provisioning Start + TTL)
-TIMELINE   ─────────┬─────────────────────────────┬─────────────────────────────────┬───────────────────────────────┬─────────────▶
+TIMELINE:  ─────────┬─────────────────────────────┬─────────────────────────────────┬───────────────────────────────┬─────────────▶
                     │                             │                                 │                               │
-SETTINGS            │                             │                                 │                        Lifetime (TTL)
-(you set)     Provisioning                   Event Start                       Termination                  = sets Event End
-                  Start                                                           Time
+SETTINGS:      Provisioning                  Event Start                       Termination                    Lifetime (TTL)
+(you set)         Start                                                           Time                       = sets Event End
                     │                             │                                 │                               │
-INSTANCES           [███████████████████████████████████████████████████████████████████████████████████████████████]
-RUNNING     instances spin up                                        unassigned instances terminated         all terminated
+                    │                             │                                 │                               │
+INSTANCE            [█████████████████████████████████████ instances running ███████████████████████████████████████]
+ACTIVITY:    instances spin up                                                                                all terminated
                                                   │                                                                 │
-USER                                              [█████████████████████████████████████████████████████████████████]
-ACCESS                                                              users can access their instance            access ends
+USER                                              [█████████████████ users can access their instance ███████████████]
+ACCESS:                                                                                                         access ends
 
 Event end time = Provisioning Start + TTL (Lifetime)
 ```
