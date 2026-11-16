@@ -23,5 +23,5 @@ Show uses Cisco CCI for sign-in. The steps depend on whether you are a Cisco emp
 {{% notice style="info" title="Note About Account Changes" %}}
 If you don't have access to the Show templates/view you are expecting through your cisco.com account, email us at [splunk-show@cisco.com](mailto:splunk-show@cisco.com)
 We'll let you know once you've been added.
-After we confirm, sign out of Show and sign in again with Cisco. Your partner access and templates will then be available.
+After we confirm, sign out of Show and sign in again with Cisco.
 {{% /notice %}}
